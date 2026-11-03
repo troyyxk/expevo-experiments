@@ -55,57 +55,24 @@ entries (67.8 % / 65.3 % reduction); all paired Δ CIs include zero.
 
 ---
 
-## V.C — cross-client sharing experiment (TSC revision)
+## V.C (TSC revision) — cross-client sharing experiment
 
-Everything lives in `runs/tsc_collaboration/`. Offline reproduction of the figure, table and statistics:
+Everything lives in `runs/tsc_collaboration/`.
 
-```bash
-cd runs/tsc_collaboration && ./scripts/run_all_tsc.sh
-```
-
-| Step | Command | In → Out |
+| Step | Command (from `runs/tsc_collaboration/`) | In → Out |
 |---|---|---|
+| 0 | `./scripts/run_all_tsc.sh` | runs steps 1–5 below |
 | 1 | `scripts/build_pools.py` | frozen corpus → 4 local pools, 3 matched pools, full pool, `config/request_assignment.json` |
 | 2 | `scripts/validate_reuse.py` | pools → `retrieval/retrieval_diagnostics.csv`, `manifests/validate_reuse.json` |
-| 3 | `scripts/aggregate_stats.py` | `predictions/predictions.jsonl` → per-question, per-pool, paired differences, 5,000 bootstrap replicates |
+| 3 | `scripts/aggregate_stats.py` | `predictions/predictions.jsonl` → `results/*.csv` (per-question, per-pool, paired differences, 5,000 bootstrap replicates) |
 | 4 | `scripts/plot_collaboration.py --mode real` | those CSVs → `figures/fig_collaborative_sharing.{pdf,png}` |
-| 5 | `scripts/export_table.py` | → `latex/table_collaborative_sharing.tex` |
+| 5 | `scripts/export_table.py` | → `latex/{fig,table}_collaborative_sharing.tex`, `latex/vc_collaboration_results.tex` |
 
-Re-running the 2,200 answers (phase 4) needs the API:
+Expected: Local-only **80.36 %** [70.73, 88.37], Shared-matched **80.24 %** [71.39, 88.18],
+Shared-full **78.18 %** [69.27, 86.55]; paired Δ = −0.12, −2.06, −2.18 pp, all CIs including zero.
 
-```bash
-EXPEVO_ENV=/path/to/.env python3 scripts/evaluate_policies.py --concurrency 14
-```
-
-Expected: Local-only 80.36 % [70.73, 88.37], Shared-matched 80.24 % [71.39, 88.18],
-Shared-full 78.18 % [69.27, 86.55]; paired Δ = −0.12, −2.06, −2.18 pp, all CIs including zero.
-
----
-
-## Supporting analyses
-
-### Analytical upload-time baseline (`D/R`)
-
-```bash
-cd p7/expevo_lifecycle
-python scripts/p9_modeled_upload.py --run-dir runs/p7_full100 --rates 1 5 10 20 50
-```
-Produces `runs/p7_full100/modeled_upload_exp/` — 7.3601 / 1.6568 ms per item at 1 Mbps,
-0.1472 / 0.0331 ms at 50 Mbps, saving 77.49 % at every rate. Used as the low-load cross-check for Fig. 6.
-
-### Emulated upload over a shaped Linux link
-
-Data: `p9/results/full_20261027_194400/` — 1,200 HTTP POSTs (5 rates × 2 representations × 5 trials × 24
-batches of 1,000 items), 30 seeds replaced by 10 full-corpus trials, `iperf3`-calibrated, zero failures.
-
-```bash
-cd p9
-python3 analyze.py --dir results/full_20261027_194400     # -> trial_summary, condition_summary, saving_summary
-python3 plot_p9.py  --dir results/full_20261027_194400    # -> fig_p9_upload_time_measured.pdf
-```
-
-Expected: measured 7.706 / 1.743 ms per item at 1 Mbps, 0.156 / 0.034 ms at 50 Mbps, saving
-**77.38 – 77.90 %**, i.e. 4.7 – 5.8 % above the `D/R` model because TBF meters whole frames.
+Re-running the 2,200 answers (the only API phase) needs `EXPEVO_ENV=/path/to/.env` and
+`scripts/evaluate_policies.py --concurrency 14`.
 
 ---
 
@@ -121,4 +88,5 @@ p7/expevo_lifecycle/runs/p7_full100/modeled_upload_exp/{tables,figures}/*
 p7/expevo_lifecycle/runs/p10_backend_refinement/{tables,figures,reports}/*
 fig6_network_simulation/{data,results,images}/*
 p9/results/full_20261027_194400/{trial_summary,condition_summary,saving_summary}.csv
+runs/tsc_collaboration/{results,figures,latex}/*
 ```

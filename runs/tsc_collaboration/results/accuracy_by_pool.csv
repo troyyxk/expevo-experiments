@@ -1,0 +1,7 @@
+policy,pool_seed,n_questions,n_responses,accuracy_percent,ci_lower_percent,ci_upper_percent,pool_hash,repository_bytes,mean_retrieved_tokens
+local_only,,55,550,80.364,70.727,88.368,,,0.0
+shared_matched,,55,550,80.242,71.394,88.182,,,0.0
+shared_full,,55,550,78.182,69.273,86.545,,,0.0
+shared_matched_20261103,20261103,55,550,79.273,69.636,87.818,,,0.0
+shared_matched_20261104,20261104,55,550,82.000,73.636,89.455,,,0.0
+shared_matched_20261105,20261105,55,550,79.455,70.182,87.455,,,0.0

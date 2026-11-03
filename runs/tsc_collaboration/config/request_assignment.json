@@ -1,0 +1,838 @@
+{
+ "assign_seed": 20261106,
+ "subject": "high_school_geography",
+ "n_questions": 55,
+ "client_counts": {
+  "0": 14,
+  "1": 14,
+  "2": 14,
+  "3": 13
+ },
+ "questions": [
+  {
+   "question_key": "original::high_school_geography/Q060",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q060",
+   "question": "Which of the following factors has little or no impact on mortality rates in the developing countries?",
+   "choices": [
+    "New medicines",
+    "Improved birth control methods",
+    "Pesticides",
+    "Famine relief"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "original::high_school_geography/Q061",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q061",
+   "question": "Which of the following is NOT a feature of an export processing zone (EPZ)?",
+   "choices": [
+    "Tariff reductions on exports",
+    "Raw materials imported duty-free",
+    "Exemption from customs duties",
+    "Strict pollution regulations"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "original::high_school_geography/Q062",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q062",
+   "question": "The theory that most migration occurs over a short distance and in steps is attributed to",
+   "choices": [
+    "Rostow.",
+    "Ravenstein.",
+    "von Th\u00fcnen.",
+    "Burgess."
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "original::high_school_geography/Q063",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q063",
+   "question": "Which country faces a serious trade disadvantage due to its location?",
+   "choices": [
+    "Singapore",
+    "Italy",
+    "Spain",
+    "Mongolia"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "original::high_school_geography/Q064",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q064",
+   "question": "Which factor in the last quarter century greatly destabilized Eastern Europe and led to ethnic conflict?",
+   "choices": [
+    "The introduction of new languages",
+    "The end of the Cold War",
+    "The invasion by the Soviets",
+    "The acceptance of many Eastern European countries into the EU"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "original::high_school_geography/Q065",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q065",
+   "question": "Which of the following jobs is in the non-basic employment sector?",
+   "choices": [
+    "Software engineer",
+    "F-10 pickup truck assembly-line worker",
+    "Oil refinery worker",
+    "Parking lot attendant"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "original::high_school_geography/Q066",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q066",
+   "question": "Part of the boundary between the United States and Mexico is the Rio Grande, an example of",
+   "choices": [
+    "a water divider.",
+    "a watercourse.",
+    "an artificial boundary.",
+    "a natural boundary."
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "original::high_school_geography/Q067",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q067",
+   "question": "Of these, the map using the smallest map scale would be the map of",
+   "choices": [
+    "the world.",
+    "Atlanta, Georgia.",
+    "Main Street, Small Town, Ohio.",
+    "Pennsylvania."
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "original::high_school_geography/Q068",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q068",
+   "question": "Which of the following supranational organizations is not an economic union?",
+   "choices": [
+    "EU",
+    "CARICOM",
+    "NAFTA",
+    "NATO"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "original::high_school_geography/Q069",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q069",
+   "question": "Which of the following statements does NOT describe a factor that contributed to suburbanization in the United States?",
+   "choices": [
+    "A shorter workweek made time for a commute possible.",
+    "Changes in the housing mortgage regulations made home ownership easier.",
+    "Fixed-route public transit routes increased in importance.",
+    "Improved automobiles made transportation easier and less limited."
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "original::high_school_geography/Q070",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q070",
+   "question": "Which of the following statements about East Asia's industrial regions is true?",
+   "choices": [
+    "Japan has a rich natural resource base.",
+    "China lacks natural resources but has a massive labor force.",
+    "China is industrializing rapidly.",
+    "Taiwan lacks industrial enterprise and an educated workforce."
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "original::high_school_geography/Q071",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q071",
+   "question": "Which of the following is NOT a characteristic of a city in the developing world?",
+   "choices": [
+    "Contains modern centers of commerce",
+    "Has a well-developed infrastructure",
+    "Experiences large in-migrations of rural people into the city",
+    "Produces a large share of its country's GDI"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "original::high_school_geography/Q072",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q072",
+   "question": "Which group represents the Persian (Iranian) variation of Islam and believes in the infallibility and divine right to authority of the Imams descended from Ali?",
+   "choices": [
+    "Sunni",
+    "Shiite",
+    "Imam",
+    "Untouchables"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "original::high_school_geography/Q073",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q073",
+   "question": "The largest Hindu temple complex ever constructed is found in",
+   "choices": [
+    "Calcutta.",
+    "Bombay.",
+    "Cambodia.",
+    "Bali."
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "original::high_school_geography/Q074",
+   "question_set": "original",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/Q074",
+   "question": "The theory that every society develops economically according to a five-stage pattern of growth is attributed to",
+   "choices": [
+    "Rostow.",
+    "Ravenstein.",
+    "von Th\u00fcnen.",
+    "Burgess."
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "extended::high_school_geography/X000",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X000",
+   "question": "The tendency for a population to continue to grow long after replacement fertility has been achieved is called",
+   "choices": [
+    "zero population growth.",
+    "rapid growth rate.",
+    "homeostatic plateau.",
+    "demographic momentum."
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X001",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X001",
+   "question": "Which form of migration below are farm workers from another country most likely to be practicing during the year?",
+   "choices": [
+    "Chain migration",
+    "Cluster migration",
+    "Circular migration",
+    "International migration"
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X002",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X002",
+   "question": "The first stage of the demographic transition exhibits",
+   "choices": [
+    "high birth rates with high but fluctuating death rates.",
+    "declining birth rates with continuing high death rates.",
+    "low birth rates with continuing high death rates.",
+    "high birth rates with declining death rates."
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "extended::high_school_geography/X003",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X003",
+   "question": "Which type of transportation system created the star-shaped city pattern?",
+   "choices": [
+    "Highways to airports that link cities",
+    "Interstate highways that link cities",
+    "Beltways around cities",
+    "Streetcar and trolley lines extending from the CBD"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X004",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X004",
+   "question": "Transnational corporations distribute their operations",
+   "choices": [
+    "manufacturing goods where production costs are the highest.",
+    "conducting accounting and research services where economical.",
+    "based on comparative advantage.",
+    "with headquarters located in LDCs."
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "extended::high_school_geography/X005",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X005",
+   "question": "To get to school in the morning, we ALL use this as our guide:",
+   "choices": [
+    "Rand-McNally Road Atlas.",
+    "world globe.",
+    "road map.",
+    "mental map."
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X006",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X006",
+   "question": "In which of the following regions is subsistence agriculture being replaced by large-scale commercial development?",
+   "choices": [
+    "The Swiss Alps",
+    "The Amazon Basin",
+    "North Africa",
+    "The Alaskan tundra"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "extended::high_school_geography/X007",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X007",
+   "question": "Which of the following U.S. main immigration flow associations is NOT correct?",
+   "choices": [
+    "Pioneer settlement to 1870\u2014Germans, British, Scotch-Irish, Africans",
+    "1870\u20131914\u2014Asians",
+    "1870\u20131914\u2014Eastern and southern Europeans",
+    "1965\u2013present\u2014Hispanics"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "extended::high_school_geography/X008",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X008",
+   "question": "Which of the following best illustrates the definition of a functional region?",
+   "choices": [
+    "A map showing Atlanta as a hub for Delta Airlines",
+    "An article describing the region referred to as the South",
+    "A map showing North Carolina's one hundred counties",
+    "An essay explaining the region known as the Bible Belt"
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X009",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X009",
+   "question": "If I wanted to ship a small piece of very valuable jewelry to my aunt who lives in Poughkeepsie, which mode of transportation makes the most sense?",
+   "choices": [
+    "Truck",
+    "Air",
+    "Ship",
+    "Railroad"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "extended::high_school_geography/X010",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X010",
+   "question": "A rejection of or indifference to religion in a country is called",
+   "choices": [
+    "polytheism.",
+    "animism.",
+    "secularism.",
+    "monotheism."
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X011",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X011",
+   "question": "Why are perceptual or vernacular regions so difficult to identify?",
+   "choices": [
+    "Boundaries are constantly being redrawn.",
+    "Physical features, such as rivers, are constantly shifting.",
+    "Defining criteria are subjective and differ among researchers.",
+    "Antecedent boundaries were drawn before humans were located in the regions."
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X012",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X012",
+   "question": "Which structure(s) traditionally occupies the center of a historic Asian city?",
+   "choices": [
+    "A central market",
+    "High-density housing",
+    "A religious building",
+    "Government office buildings"
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "extended::high_school_geography/X013",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X013",
+   "question": "Spanish colonial architecture, uneven economic development, and rural-to-urban migration flows are most commonly found in which of the following?",
+   "choices": [
+    "Southeast Asia",
+    "Sub-Saharan Africa",
+    "North America",
+    "Latin America"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X014",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X014",
+   "question": "The migration streams into the United States between 1980 and the present have been primarily composed of emigrants from which of the following regions?",
+   "choices": [
+    "Europe and North Africa",
+    "Asia and Latin America",
+    "Sub-Saharan Africa and Oceania",
+    "Central Europe and Australia"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "extended::high_school_geography/X015",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X015",
+   "question": "A person who practices the Hindu religion would be most likely to",
+   "choices": [
+    "visit a shrine built on the shore of a lake.",
+    "pray five times a day.",
+    "bathe in the Ganges River.",
+    "make a pilgrimage to Jerusalem."
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X016",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X016",
+   "question": "Historically, the world's major languages have spread by all of the following methods EXCEPT",
+   "choices": [
+    "Sanskrit records.",
+    "migration.",
+    "trade.",
+    "conquest."
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "extended::high_school_geography/X017",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X017",
+   "question": "Which of the following factors would be considered a \"pull\" factor for Riva when considering a move from India to the United States?",
+   "choices": [
+    "Abject poverty",
+    "Better job and higher wages",
+    "India's caste system",
+    "Violence in her neighborhood"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "extended::high_school_geography/X018",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X018",
+   "question": "Which theorist(s) tried to explain the prices of farm products as they relate to patterns of land use?",
+   "choices": [
+    "Rostow",
+    "Ravenstein",
+    "Von Th\u00fcnen",
+    "Burgess"
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "extended::high_school_geography/X019",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X019",
+   "question": "Which of the following is NOT a spread effect in the core-periphery model of development?",
+   "choices": [
+    "Congestion in the core",
+    "High cost of labor in the core",
+    "High density in the core",
+    "More infrastructure in the core"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X020",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X020",
+   "question": "Which one of the following groups is excluded from the caste system of Hinduism?",
+   "choices": [
+    "Scholar-priests",
+    "Warrior-landowners",
+    "Businessmen and farmers",
+    "Untouchables"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X021",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X021",
+   "question": "The intensive agricultural practice of planting and harvesting the same crop more than once a year is called",
+   "choices": [
+    "swidden.",
+    "double cropping.",
+    "pastorialism.",
+    "intertillage."
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "extended::high_school_geography/X022",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X022",
+   "question": "When a new fashion design is introduced globally, the information initially travels through a process known as",
+   "choices": [
+    "contagious diffusion",
+    "relocation diffusion",
+    "innovative diffusion",
+    "hierarchical diffusion"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X023",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X023",
+   "question": "Opponents of genetically modified organisms (GMOs) in food are afraid that the GMOs",
+   "choices": [
+    "will hinder global trade.",
+    "make plants more resistant to disease.",
+    "may cause irreversible changes in humans.",
+    "make plants more resistant to drought."
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "extended::high_school_geography/X024",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X024",
+   "question": "The world systems theory divides the world into",
+   "choices": [
+    "core, periphery, and semi-periphery.",
+    "rich and poor.",
+    "developed and undeveloped.",
+    "haves and have-nots."
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "extended::high_school_geography/X025",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X025",
+   "question": "The influence of neo-Malthusianism can be seen in",
+   "choices": [
+    "government programs for birth control and planning.",
+    "famine relief.",
+    "increased spending in social welfare programs.",
+    "increased total fertility rates."
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X026",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X026",
+   "question": "The process of devolution involves",
+   "choices": [
+    "the change of government from a democracy to a communist dictatorship.",
+    "the movement of power from the central government to regional governments in the country.",
+    "the movement of power from a monarchy to a military dictatorship.",
+    "the movement of power from regional governments to central governments."
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 2
+  },
+  {
+   "question_key": "extended::high_school_geography/X027",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X027",
+   "question": "Which one of the following statements does NOT correctly describe transnational companies (TNCs)?",
+   "choices": [
+    "Many TNCs operate in areas of electronics, chemicals, pharmaceuticals and petroleum.",
+    "Most TNCs produce and sell manufactured goods.",
+    "Most TNCs are headquartered in the United States, Japan, and the European Union.",
+    "TNCs are generally controlled by foreign governments."
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X028",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X028",
+   "question": "The \"melting pot\" theory of combining several immigrant groups into one mainstream culture is called",
+   "choices": [
+    "amalgamation theory.",
+    "acculturation.",
+    "ethnic islands.",
+    "ethnic clustering."
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "extended::high_school_geography/X029",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X029",
+   "question": "Which one of the following organizations is NOT a supranational organization?",
+   "choices": [
+    "UN",
+    "NATO",
+    "ASEAN",
+    "PLO"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X030",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X030",
+   "question": "Which one of the following demographic factors characterizes stages 4 and 5 in the demographic transition model?",
+   "choices": [
+    "Zero population growth",
+    "High mortality rates",
+    "High birth rates",
+    "High sex ratios"
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "extended::high_school_geography/X031",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X031",
+   "question": "An isobar map shows lines connecting all points of equal",
+   "choices": [
+    "atmospheric pressure",
+    "surface temperature",
+    "elevation",
+    "precipitation"
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X032",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X032",
+   "question": "What condition occurs when the people of one state want to annex a territory whose population is ethnically related to that state's population but now under the rule of another state?",
+   "choices": [
+    "Nationalism",
+    "Resource dispute",
+    "Irredentism",
+    "Positional dispute"
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X033",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X033",
+   "question": "Variations in vocabulary, pronunciation, and rhythm in a spoken language are called",
+   "choices": [
+    "syntax.",
+    "isoglosses.",
+    "lingua francas.",
+    "dialects."
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X034",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X034",
+   "question": "Boundary problems along the United States\u2013Mexico border are caused by which type of issue below?",
+   "choices": [
+    "Ownership of fertile ground",
+    "Land use",
+    "Irredentism",
+    "Immigration"
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X035",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X035",
+   "question": "In which of the following Asian countries would one find special economic zones (SEZs)?",
+   "choices": [
+    "Japan",
+    "South Korea",
+    "China",
+    "Vietnam"
+   ],
+   "gold_answer": "C",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X036",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X036",
+   "question": "Which continent has the highest total fertility rates?",
+   "choices": [
+    "Africa",
+    "Asia",
+    "South America",
+    "Europe"
+   ],
+   "gold_answer": "A",
+   "requesting_client_id": 0
+  },
+  {
+   "question_key": "extended::high_school_geography/X037",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X037",
+   "question": "What monotheistic religion is based on the life and teachings of Jesus Christ of Nazareth?",
+   "choices": [
+    "Islam",
+    "Christianity",
+    "Hinduism",
+    "Buddhism"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 1
+  },
+  {
+   "question_key": "extended::high_school_geography/X038",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X038",
+   "question": "Which of the following statements is true concerning folklore?",
+   "choices": [
+    "It is the written tradition of a group.",
+    "It encourages changing the old values and customs.",
+    "It serves to blend all cultures into one.",
+    "It expresses in words the shared values of a group by expressing their ideals."
+   ],
+   "gold_answer": "D",
+   "requesting_client_id": 3
+  },
+  {
+   "question_key": "extended::high_school_geography/X039",
+   "question_set": "extended",
+   "subject": "high_school_geography",
+   "qid": "high_school_geography/X039",
+   "question": "According to Alfred Weber's least-cost theory, which one of the following costs of production is the most important factor in locating an industry?",
+   "choices": [
+    "Labor",
+    "Transport",
+    "Raw materials",
+    "Agglomeration costs"
+   ],
+   "gold_answer": "B",
+   "requesting_client_id": 3
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+\begin{table}[t]
+    \centering
+    \caption{Controlled cross-client experience sharing on MMLU High School Geography.
+    All settings use the same 55 unseen questions and ten responses per question.
+    Shared-matched averages three preselected entry-count-matched pools.}
+    \label{tab:collaborative_sharing}
+    \footnotesize
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabular}{lrrl}
+        \hline
+        Setting & Entries & Sources & Accuracy (\%) [95\% CI] \\
+        \hline
+        Local-only & 1,500 & 1 & 80.36 [70.73, 88.37] \\
+        Shared-matched & 1,500 & 4 & 80.24 [71.39, 88.18] \\
+        Shared-full & 6,000 & 4 & 78.18 [69.27, 86.55] \\
+        \hline
+    \end{tabular}
+\end{table}

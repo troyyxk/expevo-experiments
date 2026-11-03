@@ -45,4 +45,9 @@ $PY analyze.py --dir results/full_20261027_194400 | tail -6
 $PY plot_p9.py --dir results/full_20261027_194400 | tail -3
 cd ..
 
+say "TSC / figure + table  (cross-client sharing)"
+cd runs/tsc_collaboration
+./scripts/run_all_tsc.sh | tail -4
+cd ../..
+
 say "done — regenerated files are listed in REPRODUCE.md"

@@ -13,6 +13,6 @@
 - [x] refined_count <= full_count and bytes recomputable
 - [x] BM25 diagnostics recorded (raw scores, no rescaling) — 4 rows
 - [x] API key absent from all run artifacts
-- [x] required figures exist (pdf) — 3 pdf
+- [x] required figures exist (pdf) — 7 pdf
 
 **Overall: PASS**

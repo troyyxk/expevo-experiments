@@ -1,0 +1,4 @@
+setting,entries,sources,accuracy_percent,ci_lower,ci_upper
+Local-only,1500,1,80.36,70.73,88.37
+Shared-matched,1500,4,80.24,71.39,88.18
+Shared-full,6000,4,78.18,69.27,86.55

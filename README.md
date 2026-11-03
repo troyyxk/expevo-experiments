@@ -34,6 +34,7 @@ committed here, and every figure/table is a deterministic function of them.
 ├── fig6_network_simulation/      ★ multi-client queueing simulation (Fig. 6)
 ├── p9/                           Linux tc/netns emulated upload measurement
 ├── repro/                        first-round reproduction of the NMI paper's Fig. 3–6
+├── runs/tsc_collaboration/       ★ cross-client sharing experiment (TSC revision, V.C)
 └── deliverables/                 final PDFs and LaTeX snippets used in the manuscript
 ```
 
@@ -51,6 +52,7 @@ committed here, and every figure/table is a deterministic function of them.
 | **Fig. 7 + Table II**, §V-D | does refinement cut storage without hurting accuracy? | 16 refined repositories, 11,000 held-out answers | `runs/p10_backend_refinement/scripts/*` |
 | supporting | analytical `D/R` upload-time baseline | the same payload bytes | `scripts/p9_modeled_upload.py` |
 | supporting | emulated upload over a shaped link | 1,200 real HTTP transfers at 5 rates | `p9/` |
+| **TSC Fig. + Table**, V-C | does sharing help versus a local-only pool of the same size? | 2,750 answers over 4 client pools × 55 questions | `runs/tsc_collaboration/scripts/*` |
 
 ### Source run `p7_full100`
 
@@ -81,6 +83,21 @@ why storage is non-monotonic at τ = 40.
 
 Accuracy is a macro average over four subjects × 55 held-out questions × 10 samples (2,200 answers per
 setting). Every paired 95 % bootstrap interval of the accuracy difference includes zero.
+
+### Cross-client sharing (TSC revision, §V-C)
+
+A controlled comparison on High School Geography between a **local-only** pool and a shared pool, with
+the shared pool matched to the same entry count so that repository *size* is not confounded with
+*sharing*. 55 unseen questions, question-level paired bootstrap.
+
+| Policy | Entries | Clients contributing | Accuracy (%) [95 % CI] |
+|---|---:|---:|---|
+| Local-only | 1,500 | 1 | 80.36 [70.73, 88.37] |
+| Shared-matched | 1,500 | 4 | 80.24 [71.39, 88.18] |
+| Shared-full | 6,000 | 4 | 78.18 [69.27, 86.55] |
+
+Paired differences vs Local-only: −0.12, −2.06 and −2.18 pp; every interval includes zero, so sharing
+does not measurably help or hurt on this pool — the result is reported as a null effect rather than a gain.
 
 ---
 

@@ -1,0 +1,14 @@
+[eval] resume: 554 samples already present
+[eval] tasks: 2196 (reuse_shared_full=True)
+[eval] 200 done, 0 errors
+[eval] 400 done, 0 errors
+[eval] 600 done, 0 errors
+[eval] 800 done, 0 errors
+[eval] 1000 done, 0 errors
+[eval] 1200 done, 0 errors
+[eval] 1400 done, 0 errors
+[eval] 1600 done, 0 errors
+[eval] 1800 done, 0 errors
+[eval] 2000 done, 0 errors
+[eval] finished in 7.0 min: ok=2196 err=0 tokens 779551/163312 est $0.0520
+[eval] appended 550 reused shared-full records

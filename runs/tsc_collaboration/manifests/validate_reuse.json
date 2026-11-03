@@ -1,0 +1,346 @@
+{
+ "shared_full": {
+  "pool_hash": "40b97c433bffbbf6974f23a7af4ccf643b03c296dfec056277db928382469cee",
+  "n_questions": 55,
+  "n_with_history": 55,
+  "n_top5_match": 55,
+  "n_prompt_match": 55,
+  "details": [
+   {
+    "question_key": "original::high_school_geography/Q060",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q061",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q062",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q063",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q064",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q065",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q066",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q067",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q068",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q069",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q070",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q071",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q072",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q073",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "original::high_school_geography/Q074",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X000",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X001",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X002",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X003",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X004",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X005",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X006",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X007",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X008",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X009",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X010",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X011",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X012",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X013",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X014",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X015",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X016",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X017",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X018",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X019",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X020",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X021",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X022",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X023",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X024",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X025",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X026",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X027",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X028",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X029",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X030",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X031",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X032",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X033",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X034",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X035",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X036",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X037",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X038",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   },
+   {
+    "question_key": "extended::high_school_geography/X039",
+    "has_history": true,
+    "top5_match": true,
+    "prompt_match": true
+   }
+  ]
+ },
+ "decision": {
+  "reuse_shared_full": true,
+  "new_calls_needed": 2200,
+  "reason": "all 55 questions reproduce the historical Top-5 and prompt hash, same model/decoding/repository"
+ }
+}
