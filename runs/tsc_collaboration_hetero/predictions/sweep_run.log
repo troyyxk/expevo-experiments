@@ -1,0 +1,4 @@
+[sweep] coverage 30/60: 375 entries, 30 questions, 12.5 per covered question
+[sweep] coverage 45/60: 375 entries, 45 questions, 8.3 per covered question
+[sweep] 1200 samples
+[sweep] done in 2.2 min: ok=1200 err=0 est $0.0189

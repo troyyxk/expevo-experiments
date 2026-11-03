@@ -1,0 +1,5 @@
+subject,plain_percent,full_repo_percent,delta_pp,delta_ci_lower,delta_ci_upper,n_questions
+high_school_geography,80.55,78.18,-2.36,-8.00,+3.09,55
+college_biology,81.09,80.73,-0.36,-3.64,+3.27,55
+college_medicine,69.82,70.00,+0.18,-6.73,+7.27,55
+international_law,77.27,73.82,-3.45,-7.45,+0.36,55

@@ -1,0 +1,5 @@
+coverage_questions,coverage_percent,entries,entries_per_covered_question,label,accuracy_percent,ci_lower,ci_upper
+15,25,375,25.0,Local-only,49.33,39.83,59.00
+30,50,375,12.5,shared coverage 30/60,61.00,49.67,71.83
+45,75,375,8.3,shared coverage 45/60,69.83,59.50,79.50
+60,100,375,6.2,Shared-matched,77.11,68.72,84.56

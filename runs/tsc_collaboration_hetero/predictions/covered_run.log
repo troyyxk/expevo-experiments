@@ -1,0 +1,11 @@
+[covered] 3600 samples
+  400 done
+  800 done
+  1200 done
+  1600 done
+  2000 done
+  2400 done
+  2800 done
+  3200 done
+  3600 done
+[covered] done in 5.3 min: ok=3600 err=0 est $0.0525

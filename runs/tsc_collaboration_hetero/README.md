@@ -68,6 +68,33 @@ Re-running the answers needs the API (2,750 calls, ~11 min, ~$0.06):
 EXPEVO_ENV=/path/to/.env python3 scripts/evaluate_hetero.py --concurrency 14
 ```
 
+## Controls: does the retrieved experience matter at all?
+
+| Condition | Accuracy (%) | 95% CI | Δ vs plain |
+|---|---:|---|---:|
+| plain, no retrieved context | 80.55 | [71.45, 88.36] | — |
+| placebo, Top-5 from International Law | 83.64 | [74.72, 91.28] | +3.09 [−1.09, +7.82] |
+| Local-only | 81.45 | [72.36, 89.64] | +0.91 [−3.45, +4.55] |
+| Shared-matched | 80.48 | [71.64, 88.55] | −0.06 [−4.79, +4.85] |
+| Shared-full-hetero | 80.73 | [71.82, 88.91] | +0.18 [−4.36, +4.91] |
+
+The model already answers these 55 unseen questions at 80.6 % **without any experience**, and unrelated
+retrieved text does not hurt. Per-question answers are identical to Local-only on 39/55 questions. The
+null sharing results therefore reflect a benchmark whose accuracy is driven by the model's prior, not by
+the experience repository.
+
+## Cross-subject check (same 55 questions, 10 samples)
+
+| Subject | no context (%) | full 6k repository (%) | Δ |
+|---|---:|---:|---:|
+| High School Geography | 80.55 | 78.18 | −2.36 |
+| College Biology | 81.09 | 80.73 | −0.36 |
+| College Medicine | 69.82 | 70.00 | +0.18 |
+| International Law | 77.27 | 73.82 | −3.45 |
+
+Every subject is answered at 70–81 % without any experience, and the repository moves accuracy by
+−3.5…+0.2 pp. The experience corpus does not measurably help on unseen MMLU questions.
+
 ## Limits that must be stated in the paper
 
 - The heterogeneous exposure is **constructed retrospectively**; the original corpus had every client
