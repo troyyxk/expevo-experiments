@@ -1,7 +1,4 @@
-# Run outputs are intentionally committed in this repository (they are the experiment data).
-# Only transient files are ignored.
 .env
 cache/
+runs/
 __pycache__/
-*.py[cod]
-*.npy

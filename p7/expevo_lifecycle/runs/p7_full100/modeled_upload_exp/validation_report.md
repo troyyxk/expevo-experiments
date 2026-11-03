@@ -1,6 +1,6 @@
 # P9 (Scheme A) — validation report
 
-Input: `/tmp/pub/p7/expevo_lifecycle/runs/p7_full100`
+Input: `/data/xingkun/exp_scale/p7/expevo_lifecycle/runs/p7_full100`
 
 | Check | Result | Evidence |
 |---|---|---|

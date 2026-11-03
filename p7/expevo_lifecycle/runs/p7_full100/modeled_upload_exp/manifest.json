@@ -2,9 +2,9 @@
  "method": "analytical_D_over_R",
  "network_measurement": false,
  "llm_calls": 0,
- "created": "2026-11-03T21:11:11",
- "run_dir": "/tmp/pub/p7/expevo_lifecycle/runs/p7_full100",
- "output_dir": "/tmp/pub/p7/expevo_lifecycle/runs/p7_full100/modeled_upload_exp",
+ "created": "2026-10-27T23:24:30",
+ "run_dir": "/data/xingkun/exp_scale/p7/expevo_lifecycle/runs/p7_full100",
+ "output_dir": "/data/xingkun/exp_scale/p7/expevo_lifecycle/runs/p7_full100/modeled_upload_exp",
  "subjects": {
   "international_law": {
    "paired_count": 6000,
@@ -53,7 +53,7 @@
  "validation": {
   "fig3_cross_check": {
    "checked": true,
-   "file": "/tmp/pub/p7/expevo_lifecycle/runs/p7_full100/tables/table_fig3_bytes.csv",
+   "file": "/data/xingkun/exp_scale/p7/expevo_lifecycle/runs/p7_full100/tables/table_fig3_bytes.csv",
    "rows_matched": 4
   },
   "per_item_mean_vs_aggregate": "equal to 1e-9",
