@@ -1,0 +1,75 @@
+/home/xingkun/.local/lib/python3.12/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 13] Permission denied.  joblib will operate in serial mode
+  warnings.warn("%s.  joblib will operate in serial mode" % (e,))
+/home/xingkun/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:182: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 304: OS call failed or operation not supported on this OS (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+/home/xingkun/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:829: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+[build] total=347 train=277 test=70
+  [build] 100/277    35.2s  (0.35s/item)
+  [build] 200/277    59.3s  (0.30s/item)
+  [build] 277/277    94.9s  (0.34s/item)
+[build] stored 212/277 (answered within 3 tries) in 95s
+[build] memory db=212 experience db=212
+self.similarity_bm25th: 40
+self.similarity_bm25th: 40
+  [pass1] 100/210     4.2s  (0.04s/item)
+  [pass1] 200/210     9.2s  (0.05s/item)
+  [pass1] 210/210    19.0s  (0.09s/item)
+[eval] pass 1/15: plain=45.7 memory=47.1 experience=45.7
+  [pass2] 100/210     5.0s  (0.05s/item)
+  [pass2] 200/210    10.0s  (0.05s/item)
+  [pass2] 210/210    14.0s  (0.07s/item)
+[eval] pass 2/15: plain=54.3 memory=48.6 experience=47.1
+  [pass3] 100/210     4.7s  (0.05s/item)
+  [pass3] 200/210     9.1s  (0.05s/item)
+  [pass3] 210/210    12.0s  (0.06s/item)
+[eval] pass 3/15: plain=48.6 memory=41.4 experience=51.4
+  [pass4] 100/210     5.3s  (0.05s/item)
+  [pass4] 200/210     9.5s  (0.05s/item)
+  [pass4] 210/210    11.4s  (0.05s/item)
+[eval] pass 4/15: plain=51.4 memory=51.4 experience=45.7
+  [pass5] 100/210     4.7s  (0.05s/item)
+  [pass5] 200/210     9.6s  (0.05s/item)
+  [pass5] 210/210    10.9s  (0.05s/item)
+[eval] pass 5/15: plain=47.1 memory=44.3 experience=42.9
+  [pass6] 100/210     5.2s  (0.05s/item)
+  [pass6] 200/210     9.9s  (0.05s/item)
+  [pass6] 210/210    20.4s  (0.10s/item)
+[eval] pass 6/15: plain=40.0 memory=64.3 experience=47.1
+  [pass7] 100/210     5.1s  (0.05s/item)
+  [pass7] 200/210    10.0s  (0.05s/item)
+  [pass7] 210/210    12.2s  (0.06s/item)
+[eval] pass 7/15: plain=48.6 memory=52.9 experience=51.4
+  [pass8] 100/210     5.1s  (0.05s/item)
+  [pass8] 200/210     9.7s  (0.05s/item)
+  [pass8] 210/210    11.3s  (0.05s/item)
+[eval] pass 8/15: plain=51.4 memory=42.9 experience=47.1
+  [pass9] 100/210     4.4s  (0.04s/item)
+  [pass9] 200/210     8.2s  (0.04s/item)
+  [pass9] 210/210    11.2s  (0.05s/item)
+[eval] pass 9/15: plain=55.7 memory=48.6 experience=52.9
+  [pass10] 100/210     4.3s  (0.04s/item)
+  [pass10] 200/210     8.8s  (0.04s/item)
+  [pass10] 210/210    13.5s  (0.06s/item)
+[eval] pass 10/15: plain=55.7 memory=44.3 experience=52.9
+  [pass11] 100/210     4.8s  (0.05s/item)
+  [pass11] 200/210    10.5s  (0.05s/item)
+  [pass11] 210/210    14.9s  (0.07s/item)
+[eval] pass 11/15: plain=54.3 memory=47.1 experience=51.4
+  [pass12] 100/210     5.4s  (0.05s/item)
+  [pass12] 200/210    10.7s  (0.05s/item)
+  [pass12] 210/210    14.3s  (0.07s/item)
+[eval] pass 12/15: plain=52.9 memory=48.6 experience=41.4
+  [pass13] 100/210     4.0s  (0.04s/item)
+  [pass13] 200/210     9.3s  (0.05s/item)
+  [pass13] 210/210    12.4s  (0.06s/item)
+[eval] pass 13/15: plain=42.9 memory=44.3 experience=51.4
+  [pass14] 100/210     4.6s  (0.05s/item)
+  [pass14] 200/210     8.8s  (0.04s/item)
+  [pass14] 210/210    20.2s  (0.10s/item)
+[eval] pass 14/15: plain=50.0 memory=42.9 experience=41.4
+  [pass15] 100/210     4.5s  (0.04s/item)
+  [pass15] 200/210    10.3s  (0.05s/item)
+  [pass15] 210/210    11.8s  (0.06s/item)
+[eval] pass 15/15: plain=50.0 memory=54.3 experience=50.0
+saved /data/xingkun/exp_scale/repro/out/fig4_rev.json in 305s

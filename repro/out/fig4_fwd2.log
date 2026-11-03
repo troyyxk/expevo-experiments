@@ -1,0 +1,135 @@
+/home/xingkun/.local/lib/python3.12/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 13] Permission denied.  joblib will operate in serial mode
+  warnings.warn("%s.  joblib will operate in serial mode" % (e,))
+/home/xingkun/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:182: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 304: OS call failed or operation not supported on this OS (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+/home/xingkun/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:829: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+[build] total=347 train=277 test=70
+  [build] 100/277    13.7s  (0.14s/item)
+  [build] 200/277    28.7s  (0.14s/item)
+  [build] 277/277    42.4s  (0.15s/item)
+[build] stored 214/277 (answered within 3 tries) in 42s
+[build] memory db=214 experience db=214
+self.similarity_bm25th: 40
+self.similarity_bm25th: 40
+  [pass1] 100/210     4.8s  (0.05s/item)
+  [pass1] 200/210     9.8s  (0.05s/item)
+  [pass1] 210/210    22.4s  (0.11s/item)
+[eval] pass 1/30: plain=52.9 memory=51.4 experience=37.1
+  [pass2] 100/210     5.3s  (0.05s/item)
+  [pass2] 200/210    10.9s  (0.05s/item)
+  [pass2] 210/210    21.2s  (0.10s/item)
+[eval] pass 2/30: plain=41.4 memory=32.9 experience=35.7
+  [pass3] 100/210     5.5s  (0.05s/item)
+  [pass3] 200/210    10.3s  (0.05s/item)
+  [pass3] 210/210    13.3s  (0.06s/item)
+[eval] pass 3/30: plain=50.0 memory=34.3 experience=44.3
+  [pass4] 100/210     5.5s  (0.06s/item)
+  [pass4] 200/210    10.6s  (0.05s/item)
+  [pass4] 210/210    17.0s  (0.08s/item)
+[eval] pass 4/30: plain=44.3 memory=42.9 experience=47.1
+  [pass5] 100/210     5.3s  (0.05s/item)
+  [pass5] 200/210    11.2s  (0.06s/item)
+  [pass5] 210/210    16.3s  (0.08s/item)
+[eval] pass 5/30: plain=40.0 memory=48.6 experience=47.1
+  [pass6] 100/210     6.7s  (0.07s/item)
+  [pass6] 200/210    12.9s  (0.06s/item)
+  [pass6] 210/210    21.4s  (0.10s/item)
+[eval] pass 6/30: plain=42.9 memory=41.4 experience=50.0
+  [pass7] 100/210     4.7s  (0.05s/item)
+  [pass7] 200/210     9.1s  (0.05s/item)
+  [pass7] 210/210    13.5s  (0.06s/item)
+[eval] pass 7/30: plain=47.1 memory=41.4 experience=51.4
+  [pass8] 100/210     4.9s  (0.05s/item)
+  [pass8] 200/210     9.4s  (0.05s/item)
+  [pass8] 210/210    12.6s  (0.06s/item)
+[eval] pass 8/30: plain=47.1 memory=47.1 experience=41.4
+  [pass9] 100/210     4.4s  (0.04s/item)
+  [pass9] 200/210    10.2s  (0.05s/item)
+  [pass9] 210/210    17.1s  (0.08s/item)
+[eval] pass 9/30: plain=45.7 memory=51.4 experience=48.6
+  [pass10] 100/210     4.3s  (0.04s/item)
+  [pass10] 200/210     8.1s  (0.04s/item)
+  [pass10] 210/210    11.6s  (0.06s/item)
+[eval] pass 10/30: plain=42.9 memory=44.3 experience=45.7
+  [pass11] 100/210     4.2s  (0.04s/item)
+  [pass11] 200/210     8.5s  (0.04s/item)
+  [pass11] 210/210    14.9s  (0.07s/item)
+[eval] pass 11/30: plain=45.7 memory=47.1 experience=52.9
+  [pass12] 100/210     4.8s  (0.05s/item)
+  [pass12] 200/210    10.2s  (0.05s/item)
+  [pass12] 210/210    20.9s  (0.10s/item)
+[eval] pass 12/30: plain=52.9 memory=40.0 experience=48.6
+  [pass13] 100/210     4.1s  (0.04s/item)
+  [pass13] 200/210     8.5s  (0.04s/item)
+  [pass13] 210/210    12.1s  (0.06s/item)
+[eval] pass 13/30: plain=41.4 memory=48.6 experience=41.4
+  [pass14] 100/210     4.3s  (0.04s/item)
+  [pass14] 200/210    10.8s  (0.05s/item)
+  [pass14] 210/210    17.8s  (0.08s/item)
+[eval] pass 14/30: plain=48.6 memory=42.9 experience=50.0
+  [pass15] 100/210     4.7s  (0.05s/item)
+  [pass15] 200/210    10.9s  (0.05s/item)
+  [pass15] 210/210    14.9s  (0.07s/item)
+[eval] pass 15/30: plain=45.7 memory=44.3 experience=42.9
+  [pass16] 100/210     5.8s  (0.06s/item)
+  [pass16] 200/210    10.7s  (0.05s/item)
+  [pass16] 210/210    16.2s  (0.08s/item)
+[eval] pass 16/30: plain=45.7 memory=40.0 experience=45.7
+  [pass17] 100/210     4.7s  (0.05s/item)
+  [pass17] 200/210    10.8s  (0.05s/item)
+  [pass17] 210/210    16.5s  (0.08s/item)
+[eval] pass 17/30: plain=45.7 memory=45.7 experience=32.9
+  [pass18] 100/210     4.6s  (0.05s/item)
+  [pass18] 200/210     8.6s  (0.04s/item)
+  [pass18] 210/210    13.7s  (0.07s/item)
+[eval] pass 18/30: plain=40.0 memory=51.4 experience=48.6
+  [pass19] 100/210     4.5s  (0.05s/item)
+  [pass19] 200/210    11.2s  (0.06s/item)
+  [pass19] 210/210    19.1s  (0.09s/item)
+[eval] pass 19/30: plain=51.4 memory=38.6 experience=42.9
+  [pass20] 100/210     4.6s  (0.05s/item)
+  [pass20] 200/210     9.8s  (0.05s/item)
+  [pass20] 210/210    20.3s  (0.10s/item)
+[eval] pass 20/30: plain=37.1 memory=41.4 experience=45.7
+  [pass21] 100/210     4.4s  (0.04s/item)
+  [pass21] 200/210     8.4s  (0.04s/item)
+  [pass21] 210/210    11.8s  (0.06s/item)
+[eval] pass 21/30: plain=41.4 memory=41.4 experience=47.1
+  [pass22] 100/210     3.9s  (0.04s/item)
+  [pass22] 200/210     7.9s  (0.04s/item)
+  [pass22] 210/210    14.7s  (0.07s/item)
+[eval] pass 22/30: plain=44.3 memory=45.7 experience=41.4
+  [pass23] 100/210     6.0s  (0.06s/item)
+  [pass23] 200/210    12.7s  (0.06s/item)
+  [pass23] 210/210    23.8s  (0.11s/item)
+[eval] pass 23/30: plain=47.1 memory=40.0 experience=42.9
+  [pass24] 100/210     4.4s  (0.04s/item)
+  [pass24] 200/210     8.2s  (0.04s/item)
+  [pass24] 210/210    10.9s  (0.05s/item)
+[eval] pass 24/30: plain=34.3 memory=42.9 experience=52.9
+  [pass25] 100/210     4.3s  (0.04s/item)
+  [pass25] 200/210     8.8s  (0.04s/item)
+  [pass25] 210/210    14.4s  (0.07s/item)
+[eval] pass 25/30: plain=44.3 memory=41.4 experience=45.7
+  [pass26] 100/210     4.4s  (0.04s/item)
+  [pass26] 200/210     9.7s  (0.05s/item)
+  [pass26] 210/210    14.4s  (0.07s/item)
+[eval] pass 26/30: plain=44.3 memory=51.4 experience=38.6
+  [pass27] 100/210     7.0s  (0.07s/item)
+  [pass27] 200/210    12.4s  (0.06s/item)
+  [pass27] 210/210    18.0s  (0.09s/item)
+[eval] pass 27/30: plain=42.9 memory=42.9 experience=51.4
+  [pass28] 100/210     4.6s  (0.05s/item)
+  [pass28] 200/210     9.1s  (0.05s/item)
+  [pass28] 210/210    11.9s  (0.06s/item)
+[eval] pass 28/30: plain=47.1 memory=42.9 experience=50.0
+  [pass29] 100/210     4.7s  (0.05s/item)
+  [pass29] 200/210     9.2s  (0.05s/item)
+  [pass29] 210/210    19.0s  (0.09s/item)
+[eval] pass 29/30: plain=44.3 memory=44.3 experience=45.7
+  [pass30] 100/210     8.3s  (0.08s/item)
+  [pass30] 200/210    19.4s  (0.10s/item)
+  [pass30] 210/210    35.9s  (0.17s/item)
+[eval] pass 30/30: plain=52.9 memory=48.6 experience=45.7
+saved /data/xingkun/exp_scale/repro/out/fig4.json in 551s

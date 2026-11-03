@@ -1,0 +1,221 @@
+{
+ "tag": "fig5",
+ "model": "meta-llama/llama-3.1-8b-instruct",
+ "n_questions": 200,
+ "rounds": 10,
+ "history": [
+  {
+   "acc": 92.10000000000001,
+   "acc_strict": 50.3,
+   "n": 200,
+   "conf_all": 81.69109947643979,
+   "conf_right": 81.61111111111111,
+   "conf_wrong": 83.0,
+   "conf_valid_frac": 0.955,
+   "epoch": 1,
+   "db_size": 0,
+   "secs": 77.1,
+   "conf_valid": 191
+  },
+  {
+   "acc": 94.55,
+   "acc_strict": 55.25,
+   "n": 200,
+   "conf_all": 87.81481481481481,
+   "conf_right": 87.58100558659218,
+   "conf_wrong": 92.0,
+   "conf_valid_frac": 0.945,
+   "epoch": 2,
+   "db_size": 200,
+   "secs": 73.9,
+   "conf_valid": 189
+  },
+  {
+   "acc": 93.05,
+   "acc_strict": 53.2,
+   "n": 200,
+   "conf_all": 86.96858638743456,
+   "conf_right": 86.57714285714286,
+   "conf_wrong": 91.25,
+   "conf_valid_frac": 0.955,
+   "epoch": 3,
+   "db_size": 400,
+   "secs": 71.9,
+   "conf_valid": 191
+  },
+  {
+   "acc": 92.65,
+   "acc_strict": 53.0,
+   "n": 200,
+   "conf_all": 92.01578947368421,
+   "conf_right": 92.00568181818181,
+   "conf_wrong": 92.14285714285714,
+   "conf_valid_frac": 0.95,
+   "epoch": 4,
+   "db_size": 600,
+   "secs": 71.4,
+   "conf_valid": 190
+  },
+  {
+   "acc": 94.3,
+   "acc_strict": 54.55,
+   "n": 200,
+   "conf_all": 93.1842105263158,
+   "conf_right": 93.08333333333333,
+   "conf_wrong": 95.0,
+   "conf_valid_frac": 0.95,
+   "epoch": 5,
+   "db_size": 800,
+   "secs": 75.3,
+   "conf_valid": 190
+  },
+  {
+   "acc": 94.85,
+   "acc_strict": 54.900000000000006,
+   "n": 200,
+   "conf_all": 95.0974358974359,
+   "conf_right": 94.91061452513966,
+   "conf_wrong": 97.1875,
+   "conf_valid_frac": 0.975,
+   "epoch": 6,
+   "db_size": 1000,
+   "secs": 77.8,
+   "conf_valid": 195
+  },
+  {
+   "acc": 93.0,
+   "acc_strict": 53.25,
+   "n": 200,
+   "conf_all": 93.3903743315508,
+   "conf_right": 93.77142857142857,
+   "conf_wrong": 87.83333333333333,
+   "conf_valid_frac": 0.935,
+   "epoch": 7,
+   "db_size": 1200,
+   "secs": 77.3,
+   "conf_valid": 187
+  },
+  {
+   "acc": 93.7,
+   "acc_strict": 54.15,
+   "n": 200,
+   "conf_all": 92.18085106382979,
+   "conf_right": 92.05714285714286,
+   "conf_wrong": 93.84615384615384,
+   "conf_valid_frac": 0.94,
+   "epoch": 8,
+   "db_size": 1400,
+   "secs": 77.5,
+   "conf_valid": 188
+  },
+  {
+   "acc": 93.95,
+   "acc_strict": 55.400000000000006,
+   "n": 200,
+   "conf_all": 92.74736842105263,
+   "conf_right": 92.48314606741573,
+   "conf_wrong": 96.66666666666667,
+   "conf_valid_frac": 0.95,
+   "epoch": 9,
+   "db_size": 1600,
+   "secs": 73.8,
+   "conf_valid": 190
+  },
+  {
+   "acc": 93.75,
+   "acc_strict": 54.949999999999996,
+   "n": 200,
+   "conf_all": 94.32291666666667,
+   "conf_right": 94.04371584699453,
+   "conf_wrong": 100.0,
+   "conf_valid_frac": 0.96,
+   "epoch": 10,
+   "db_size": 1800,
+   "secs": 76.2,
+   "conf_valid": 192
+  }
+ ],
+ "sample_answers": [
+  {
+   "q": "Which of the following is not a way to form recombinant DNA?",
+   "truth": "Translation",
+   "answers": [
+    "Conjugation",
+    "Conjugation",
+    "Conjugation",
+    "Conjugation",
+    "Conjugation",
+    "Conjugation is a method of horizontal gene transfer, but it is not a way to form recombinant DNA itself. Transformation is a way to form recombinant DNA. The best answer is Transformation",
+    "Conjugation",
+    "Conjugation is not a way to form recombinant DNA, it is a method of horizontal gene transfer. Therefore, the best answer is:",
+    "Conjugation",
+    "Conjugation"
+   ]
+  },
+  {
+   "q": "A mutation in a bacterial enzyme changed a previously polar amino acid into a no",
+   "truth": "By changing the shape of the protein",
+   "answers": [
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity",
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity",
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity",
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity",
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity",
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity",
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity",
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity",
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity",
+    "An amino acid change away from the active site cannot alter the enzyme’s substrate specificity"
+   ]
+  },
+  {
+   "q": "In animal cells, which of the following represents the most likely pathway that ",
+   "truth": "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+   "answers": [
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+    "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane"
+   ]
+  },
+  {
+   "q": "Which of the following is not known to be involved in the control of cell divisi",
+   "truth": "Fibroblast cells",
+   "answers": [
+    "Fibroblast cells",
+    "Fibroblast cells",
+    "Fibroblast cells",
+    "Fibroblast cells",
+    "Fibroblast cells",
+    "Fibroblast cells",
+    "Fibroblast cells",
+    "Fibroblast cells",
+    "Fibroblast cells",
+    "Fibroblast cells"
+   ]
+  },
+  {
+   "q": "Homologous structures are often cited as evidence for the process of natural sel",
+   "truth": "the forelegs of an insect and the forelimbs of a dog",
+   "answers": [
+    "the forelegs of an insect and the forelimbs of a dog",
+    "the wings of a bird and the wings of a bat",
+    "the wings of a bird and the wings of a bat",
+    "the wings of a bird and the wings of a bat",
+    "the forelegs of an insect and the forelimbs of a dog",
+    "the wings of a bird and the wings of a bat",
+    "the wings of a bird and the wings of a bat",
+    "the wings of a bird and the wings of a bat",
+    "The wings of a bird and the wings of a bat are not homologous structures, but the text actually says they are not examples of homologous structures, not that they are not homologous. However, the correct answer is the option that says the forelegs of an insect and the forelimbs of a dog are not homologous structures",
+    "the forelegs of an insect and the forelimbs of a dog"
+   ]
+  }
+ ],
+ "elapsed": 840.2
+}

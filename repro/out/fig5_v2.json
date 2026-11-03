@@ -1,0 +1,90 @@
+{
+ "tag": "fig5_v2",
+ "model": "meta-llama/llama-3.1-8b-instruct",
+ "n_questions": 200,
+ "rounds": 10,
+ "chunk": 20,
+ "history": [
+  {
+   "epoch": 1,
+   "acc_strict": 54.85,
+   "acc_snap": 91.9,
+   "db_size": 0,
+   "all_wrong_q": 27,
+   "secs": 208.2
+  },
+  {
+   "epoch": 2,
+   "acc_strict": 70.8,
+   "acc_snap": 91.9,
+   "db_size": 200,
+   "all_wrong_q": 19,
+   "secs": 171.6
+  },
+  {
+   "epoch": 3,
+   "acc_strict": 74.55,
+   "acc_snap": 91.1,
+   "db_size": 400,
+   "all_wrong_q": 20,
+   "secs": 175.1
+  },
+  {
+   "epoch": 4,
+   "acc_strict": 73.5,
+   "acc_snap": 90.05,
+   "db_size": 600,
+   "all_wrong_q": 20,
+   "secs": 182.7
+  },
+  {
+   "epoch": 5,
+   "acc_strict": 76.0,
+   "acc_snap": 90.2,
+   "db_size": 800,
+   "all_wrong_q": 20,
+   "secs": 179.6
+  },
+  {
+   "epoch": 6,
+   "acc_strict": 75.85,
+   "acc_snap": 90.75,
+   "db_size": 1000,
+   "all_wrong_q": 19,
+   "secs": 168.5
+  },
+  {
+   "epoch": 7,
+   "acc_strict": 77.3,
+   "acc_snap": 90.9,
+   "db_size": 1200,
+   "all_wrong_q": 18,
+   "secs": 143.8
+  },
+  {
+   "epoch": 8,
+   "acc_strict": 75.35,
+   "acc_snap": 89.5,
+   "db_size": 1400,
+   "all_wrong_q": 20,
+   "secs": 169.2
+  },
+  {
+   "epoch": 9,
+   "acc_strict": 76.85,
+   "acc_snap": 89.4,
+   "db_size": 1600,
+   "all_wrong_q": 20,
+   "secs": 164.1
+  },
+  {
+   "epoch": 10,
+   "acc_strict": 78.05,
+   "acc_snap": 91.05,
+   "db_size": 1800,
+   "all_wrong_q": 17,
+   "secs": 141.7
+  }
+ ],
+ "elapsed": 1704.6
+}

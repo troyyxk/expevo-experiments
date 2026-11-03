@@ -1,0 +1,130 @@
+{
+ "international_law": {
+  "subject": "international_law",
+  "n_q": 60,
+  "n_ep": 600,
+  "raw_bytes": 436110,
+  "dist_bytes": 117210,
+  "bm25_off_median": 5.452549610906425,
+  "bm25_off_p99": 24.897054805586894,
+  "bm25_off_max": 113.83269100541088,
+  "thresholds": {
+   "100": {
+    "groups": 11,
+    "count": 588,
+    "bytes": 113744
+   },
+   "80": {
+    "groups": 48,
+    "count": 527,
+    "bytes": 98494
+   },
+   "60": {
+    "groups": 99,
+    "count": 395,
+    "bytes": 70594
+   },
+   "40": {
+    "groups": 125,
+    "count": 208,
+    "bytes": 36800
+   }
+  }
+ },
+ "college_medicine": {
+  "subject": "college_medicine",
+  "n_q": 60,
+  "n_ep": 600,
+  "raw_bytes": 431010,
+  "dist_bytes": 116616,
+  "bm25_off_median": 5.616947758034511,
+  "bm25_off_p99": 26.83846149683374,
+  "bm25_off_max": 128.2841010506628,
+  "thresholds": {
+   "100": {
+    "groups": 18,
+    "count": 578,
+    "bytes": 110383
+   },
+   "80": {
+    "groups": 52,
+    "count": 511,
+    "bytes": 94114
+   },
+   "60": {
+    "groups": 98,
+    "count": 394,
+    "bytes": 69765
+   },
+   "40": {
+    "groups": 125,
+    "count": 232,
+    "bytes": 40374
+   }
+  }
+ },
+ "college_biology": {
+  "subject": "college_biology",
+  "n_q": 60,
+  "n_ep": 600,
+  "raw_bytes": 376500,
+  "dist_bytes": 113179,
+  "bm25_off_median": 5.6073349838340585,
+  "bm25_off_p99": 26.506044983861152,
+  "bm25_off_max": 136.90694849146732,
+  "thresholds": {
+   "100": {
+    "groups": 15,
+    "count": 580,
+    "bytes": 107958
+   },
+   "80": {
+    "groups": 49,
+    "count": 526,
+    "bytes": 95322
+   },
+   "60": {
+    "groups": 100,
+    "count": 410,
+    "bytes": 71501
+   },
+   "40": {
+    "groups": 131,
+    "count": 223,
+    "bytes": 38506
+   }
+  }
+ },
+ "high_school_geography": {
+  "subject": "high_school_geography",
+  "n_q": 60,
+  "n_ep": 600,
+  "raw_bytes": 297390,
+  "dist_bytes": 117356,
+  "bm25_off_median": 5.252040202293317,
+  "bm25_off_p99": 25.97777610683684,
+  "bm25_off_max": 151.0279027567418,
+  "thresholds": {
+   "100": {
+    "groups": 15,
+    "count": 581,
+    "bytes": 112031
+   },
+   "80": {
+    "groups": 50,
+    "count": 526,
+    "bytes": 98275
+   },
+   "60": {
+    "groups": 104,
+    "count": 404,
+    "bytes": 72401
+   },
+   "40": {
+    "groups": 129,
+    "count": 231,
+    "bytes": 41372
+   }
+  }
+ }
+}

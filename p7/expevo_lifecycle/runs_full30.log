@@ -1,0 +1,171 @@
+
+=== prepare_mmlu ===
+[prepare] international_law      rows=121 sampled=75 construction=60 heldout=15
+[prepare] college_medicine       rows=173 sampled=75 construction=60 heldout=15
+[prepare] college_biology        rows=144 sampled=75 construction=60 heldout=15
+[prepare] high_school_geography  rows=198 sampled=75 construction=60 heldout=15
+[prepare] run dir: /data/xingkun/exp_scale/p7/expevo_lifecycle/runs/p7_full30
+=== prepare_mmlu done in 1s ===
+
+=== run_interactions ===
+[interactions] 7200 episodes queued, concurrency=16
+  ... 200/7200 done (ok=200, failed=0)
+  ... 400/7200 done (ok=400, failed=0)
+  ... 600/7200 done (ok=600, failed=0)
+  ... 800/7200 done (ok=800, failed=0)
+  ... 1000/7200 done (ok=1000, failed=0)
+  ... 1200/7200 done (ok=1200, failed=0)
+  ... 1400/7200 done (ok=1400, failed=0)
+  ... 1600/7200 done (ok=1600, failed=0)
+  ... 1800/7200 done (ok=1800, failed=0)
+  ... 2000/7200 done (ok=2000, failed=0)
+  ... 2200/7200 done (ok=2200, failed=0)
+  ... 2400/7200 done (ok=2400, failed=0)
+  ... 2600/7200 done (ok=2600, failed=0)
+  ... 2800/7200 done (ok=2800, failed=0)
+  ... 3000/7200 done (ok=3000, failed=0)
+  ... 3200/7200 done (ok=3200, failed=0)
+  ... 3400/7200 done (ok=3400, failed=0)
+  ... 3600/7200 done (ok=3600, failed=0)
+  ... 3800/7200 done (ok=3800, failed=0)
+  ... 4000/7200 done (ok=4000, failed=0)
+  ... 4200/7200 done (ok=4200, failed=0)
+  ... 4400/7200 done (ok=4400, failed=0)
+  ... 4600/7200 done (ok=4600, failed=0)
+  ... 4800/7200 done (ok=4800, failed=0)
+  ... 5000/7200 done (ok=5000, failed=0)
+  ... 5200/7200 done (ok=5200, failed=0)
+  ... 5400/7200 done (ok=5400, failed=0)
+  ... 5600/7200 done (ok=5600, failed=0)
+  ... 5800/7200 done (ok=5800, failed=0)
+  ... 6000/7200 done (ok=6000, failed=0)
+  ... 6200/7200 done (ok=6200, failed=0)
+  ... 6400/7200 done (ok=6400, failed=0)
+  ... 6600/7200 done (ok=6600, failed=0)
+  ... 6800/7200 done (ok=6800, failed=0)
+  ... 7000/7200 done (ok=7000, failed=0)
+  ... 7200/7200 done (ok=7200, failed=0)
+[interactions] ok=7200 failed=0 cost=$0.074669
+=== run_interactions done in 677s ===
+
+=== distill ===
+[distill] 7200 episodes, concurrency=16
+  ... 200/7200 (ok=200, failed=0)
+  ... 400/7200 (ok=400, failed=0)
+  ... 600/7200 (ok=600, failed=0)
+  ... 800/7200 (ok=800, failed=0)
+  ... 1000/7200 (ok=1000, failed=0)
+  ... 1200/7200 (ok=1200, failed=0)
+  ... 1400/7200 (ok=1400, failed=0)
+  ... 1600/7200 (ok=1600, failed=0)
+  ... 1800/7200 (ok=1800, failed=0)
+  ... 2000/7200 (ok=2000, failed=0)
+  ... 2200/7200 (ok=2200, failed=0)
+  ... 2400/7200 (ok=2400, failed=0)
+  ... 2600/7200 (ok=2600, failed=0)
+  ... 2800/7200 (ok=2800, failed=0)
+  ... 3000/7200 (ok=3000, failed=0)
+  ... 3200/7200 (ok=3200, failed=0)
+  ... 3400/7200 (ok=3400, failed=0)
+  ... 3600/7200 (ok=3600, failed=0)
+  ... 3800/7200 (ok=3800, failed=0)
+  ... 4000/7200 (ok=4000, failed=0)
+  ... 4200/7200 (ok=4200, failed=0)
+  ... 4400/7200 (ok=4400, failed=0)
+  ... 4600/7200 (ok=4600, failed=0)
+  ... 4800/7200 (ok=4800, failed=0)
+  ... 5000/7200 (ok=5000, failed=0)
+  ... 5200/7200 (ok=5200, failed=0)
+  ... 5400/7200 (ok=5400, failed=0)
+  ... 5600/7200 (ok=5600, failed=0)
+  ... 5800/7200 (ok=5800, failed=0)
+  ... 6000/7200 (ok=6000, failed=0)
+  ... 6200/7200 (ok=6200, failed=0)
+  ... 6400/7200 (ok=6400, failed=0)
+  ... 6600/7200 (ok=6600, failed=0)
+  ... 6800/7200 (ok=6800, failed=0)
+  ... 7000/7200 (ok=7000, failed=0)
+  ... 7200/7200 (ok=7200, failed=0)
+[distill] ok=7200 failed=0 cost=$0.092695
+=== distill done in 374s ===
+
+=== route_and_store ===
+[store] international_law      episodes=1800 experiences=1800 full=1800 bytes=  412638
+[store] college_medicine       episodes=1800 experiences=1800 full=1800 bytes=  343077
+[store] college_biology        episodes=1800 experiences=1800 full=1800 bytes=  363100
+[store] high_school_geography  episodes=1800 experiences=1800 full=1800 bytes=  340478
+=== route_and_store done in 0s ===
+
+=== refine ===
+[refine] international_law      n=1800 self_med=80.9 off_p99=44.7 max=140.2
+  [refine] th=100: condensed 26/26 groups (overflow=0)
+  [refine] th=100: count 1800 -> 1699  bytes 412638 -> 386890
+  [refine] th=80: condensed 119/119 groups (overflow=0)
+  [refine] th=80: count 1800 -> 1309  bytes 412638 -> 292652
+  [refine] th=60: condensed 157/157 groups (overflow=0)
+  [refine] th=60: count 1800 -> 670  bytes 412638 -> 146287
+  [refine] th=40: condensed 111/111 groups (overflow=0)
+  [refine] th=40: count 1800 -> 189  bytes 412638 -> 58361
+[refine] college_medicine       n=1800 self_med=74.9 off_p99=42.3 max=317.2
+  [refine] th=100: condensed 21/21 groups (overflow=0)
+  [refine] th=100: count 1800 -> 1661  bytes 343077 -> 309247
+  [refine] th=80: condensed 84/85 groups (overflow=1)
+  [refine] th=80: count 1800 -> 1479  bytes 343077 -> 269833
+  [refine] th=60: condensed 128/129 groups (overflow=1)
+  [refine] th=60: count 1800 -> 1134  bytes 343077 -> 205781
+  [refine] th=40: condensed 126/127 groups (overflow=1)
+  [refine] th=40: count 1800 -> 800  bytes 343077 -> 160560
+[refine] college_biology        n=1800 self_med=76.2 off_p99=38.3 max=133.1
+  [refine] th=100: condensed 26/26 groups (overflow=0)
+  [refine] th=100: count 1800 -> 1669  bytes 363100 -> 328791
+  [refine] th=80: condensed 93/93 groups (overflow=0)
+  [refine] th=80: count 1800 -> 1346  bytes 363100 -> 253951
+  [refine] th=60: condensed 169/169 groups (overflow=0)
+  [refine] th=60: count 1800 -> 776  bytes 363100 -> 143441
+  [refine] th=40: condensed 150/150 groups (overflow=0)
+  [refine] th=40: count 1800 -> 341  bytes 363100 -> 70066
+[refine] high_school_geography  n=1800 self_med=67.8 off_p99=35.0 max=113.4
+  [refine] th=100: condensed 8/8 groups (overflow=0)
+  [refine] th=100: count 1800 -> 1781  bytes 340478 -> 335241
+  [refine] th=80: condensed 39/39 groups (overflow=0)
+  [refine] th=80: count 1800 -> 1644  bytes 340478 -> 302117
+  [refine] th=60: condensed 141/141 groups (overflow=0)
+  [refine] th=60: count 1800 -> 1088  bytes 340478 -> 192983
+  [refine] th=40: condensed 171/171 groups (overflow=0)
+  [refine] th=40: count 1800 -> 382  bytes 340478 -> 74978
+[refine] cost=$0.036681
+=== refine done in 247s ===
+
+=== metrics ===
+subject                    raw MB  dist MB ref100 MB  upload%  storage%
+international_law          1.8708   0.4126    0.3869    -77.9      -6.2
+college_medicine           1.8347   0.3431    0.3092    -81.3      -9.9
+college_biology            1.6389   0.3631    0.3288    -77.8      -9.4
+high_school_geography      1.2733   0.3405    0.3352    -73.3      -1.5
+
+TOTAL raw=6.6177 MB distilled=1.4593 MB refined@100=1.3602 MB
+overall upload reduction 78.0% | storage reduction @BM25-100 6.8%
+=== metrics done in 0s ===
+
+=== plots ===
+[plots] wrote fig_lifecycle_footprint.pdf, fig_lifecycle_footprint.png, fig_modeled_upload_latency.pdf, fig_modeled_upload_latency.png, fig_refinement_storage_proxy.pdf, fig_refinement_storage_proxy.png
+=== plots done in 2s ===
+
+=== validate ===
+[PASS] dataset frozen with revision/seed  (rev=c30699e8...)
+[PASS] construction and heldout question IDs are disjoint
+[PASS] no heldout question entered any episode  (0 overlaps)
+[PASS] inference prompt template carries no gold answer
+[PASS] every experience traces to a real episode
+[PASS] n_raw == n_distilled == full_count  (raw=7200 dist=7200 full=7200)
+[PASS] full_bytes == distilled_total_bytes  (1459293 vs 1459293)
+[PASS] every threshold covers each experience exactly once
+[PASS] refined_count <= full_count and bytes recomputable
+[PASS] BM25 diagnostics recorded (raw scores, no rescaling)  (4 rows)
+[PASS] API key absent from all run artifacts
+[PASS] required figures exist (pdf)  (3 pdf)
+
+[validate] PASS -> validation_report.md
+=== validate done in 1s ===
+
+ALL STAGES DONE in 1302s -> /data/xingkun/exp_scale/p7/expevo_lifecycle/runs/p7_full30

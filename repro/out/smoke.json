@@ -1,0 +1,64 @@
+{
+ "tag": "smoke",
+ "model": "meta-llama/llama-3.1-8b-instruct",
+ "n_questions": 6,
+ "rounds": 2,
+ "history": [
+  {
+   "acc": 91.66666666666666,
+   "acc_strict": 50.0,
+   "n": 6,
+   "conf_all": 88.18181818181819,
+   "conf_right": 92.0,
+   "conf_wrong": 50.0,
+   "conf_valid_frac": 0.9166666666666666,
+   "epoch": 1,
+   "db_size": 0,
+   "secs": 7.4,
+   "conf_valid": 11
+  }
+ ],
+ "sample_answers": [
+  {
+   "q": "Which of the following is not a way to form recombinant DNA?",
+   "truth": "Translation",
+   "answers": [
+    "Transformation",
+    "Transformation"
+   ]
+  },
+  {
+   "q": "A mutation in a bacterial enzyme changed a previously polar amino acid into a no",
+   "truth": "By changing the shape of the protein",
+   "answers": [
+    "[By changing the shape of the protein]",
+    "By changing the shape of the protein"
+   ]
+  },
+  {
+   "q": "In animal cells, which of the following represents the most likely pathway that ",
+   "truth": "Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane",
+   "answers": [
+    "[Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane]",
+    "[Ribosome–rough ER–Golgi apparatus–secretory vesicle–plasma membrane]"
+   ]
+  },
+  {
+   "q": "Which of the following is not known to be involved in the control of cell divisi",
+   "truth": "Fibroblast cells",
+   "answers": [
+    "Fibroblast cells",
+    "Fibroblast cells"
+   ]
+  },
+  {
+   "q": "Homologous structures are often cited as evidence for the process of natural sel",
+   "truth": "the forelegs of an insect and the forelimbs of a dog",
+   "answers": [
+    "[the wings of a bird and the wings of a bat', 'the flippers of a whale and the arms of a man', 'the pectoral fins of a porpoise and the flippers of a seal']",
+    "[the wings of a bird and the wings of a bat']"
+   ]
+  }
+ ],
+ "elapsed": 9.4
+}

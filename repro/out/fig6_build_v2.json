@@ -1,0 +1,120 @@
+{
+ "tag": "fig6_build_v2",
+ "model": "meta-llama/llama-3.1-8b-instruct",
+ "chunk": 10,
+ "stats": [
+  {
+   "iter": 1,
+   "acc_strict": 51.0,
+   "db": 100,
+   "all_wrong_q": 28,
+   "secs": 65.5
+  },
+  {
+   "iter": 2,
+   "acc_strict": 65.0,
+   "db": 200,
+   "all_wrong_q": 21,
+   "secs": 55.8
+  },
+  {
+   "iter": 3,
+   "acc_strict": 69.66666666666667,
+   "db": 300,
+   "all_wrong_q": 18,
+   "secs": 65.8
+  },
+  {
+   "iter": 4,
+   "acc_strict": 69.33333333333333,
+   "db": 400,
+   "all_wrong_q": 19,
+   "secs": 60.3
+  },
+  {
+   "iter": 5,
+   "acc_strict": 70.0,
+   "db": 500,
+   "all_wrong_q": 18,
+   "secs": 76.7
+  },
+  {
+   "iter": 6,
+   "acc_strict": 72.0,
+   "db": 600,
+   "all_wrong_q": 17,
+   "secs": 82.7
+  },
+  {
+   "iter": 7,
+   "acc_strict": 71.33333333333333,
+   "db": 700,
+   "all_wrong_q": 16,
+   "secs": 76.7
+  },
+  {
+   "iter": 8,
+   "acc_strict": 71.33333333333333,
+   "db": 800,
+   "all_wrong_q": 16,
+   "secs": 72.3
+  },
+  {
+   "iter": 9,
+   "acc_strict": 76.0,
+   "db": 900,
+   "all_wrong_q": 15,
+   "secs": 71.6
+  },
+  {
+   "iter": 10,
+   "acc_strict": 73.0,
+   "db": 1000,
+   "all_wrong_q": 17,
+   "secs": 84.6
+  },
+  {
+   "iter": 11,
+   "acc_strict": 74.0,
+   "db": 1100,
+   "all_wrong_q": 17,
+   "secs": 85.4
+  },
+  {
+   "iter": 12,
+   "acc_strict": 76.33333333333333,
+   "db": 1200,
+   "all_wrong_q": 15,
+   "secs": 81.7
+  },
+  {
+   "iter": 13,
+   "acc_strict": 75.0,
+   "db": 1300,
+   "all_wrong_q": 15,
+   "secs": 87.1
+  },
+  {
+   "iter": 14,
+   "acc_strict": 74.66666666666667,
+   "db": 1400,
+   "all_wrong_q": 16,
+   "secs": 72.3
+  },
+  {
+   "iter": 15,
+   "acc_strict": 76.33333333333333,
+   "db": 1500,
+   "all_wrong_q": 14,
+   "secs": 74.8
+  },
+  {
+   "iter": 16,
+   "acc_strict": 72.66666666666667,
+   "db": 1600,
+   "all_wrong_q": 16,
+   "secs": 79.6
+  }
+ ],
+ "elapsed": 1193.0
+}

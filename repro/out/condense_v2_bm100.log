@@ -1,0 +1,29 @@
+/home/xingkun/.local/lib/python3.12/site-packages/joblib/_multiprocessing_helpers.py:44: UserWarning: [Errno 13] Permission denied.  joblib will operate in serial mode
+  warnings.warn("%s.  joblib will operate in serial mode" % (e,))
+/home/xingkun/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:182: UserWarning: CUDA initialization: Unexpected error from cudaGetDeviceCount(). Did you run some cuda functions before calling NumCudaDevices() that might have already set an error? Error 304: OS call failed or operation not supported on this OS (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)
+  return torch._C._cuda_getDeviceCount() > 0
+/home/xingkun/.local/lib/python3.12/site-packages/torch/cuda/__init__.py:829: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+self.similarity_bm25th: 40
+len(prompt):  1421
+len(prompt):  2018
+len(prompt):  2251
+len(prompt):  1187
+len(prompt):  1409
+len(prompt):  1143
+len(prompt):  3120
+len(prompt):  1085
+len(prompt):  2127
+len(prompt):  2129
+len(prompt):  1158
+len(prompt):  1227
+len(prompt):  1304
+len(prompt):  1317
+len(prompt):  1076
+len(prompt):  1223
+len(prompt):  1463
+len(prompt):  1094
+len(prompt):  1316
+len(prompt):  1198
+  [condense] 20/20     4.9s  (0.25s/item)
+[th=100.0] 1500 -> 1439 (95.9%), groups=20, covered=81

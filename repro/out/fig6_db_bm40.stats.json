@@ -1,0 +1,20 @@
+{
+ "threshold": 40.0,
+ "n_before": 3000,
+ "n_after": 461,
+ "n_groups": 209,
+ "group_sizes_top10": [
+  42,
+  38,
+  32,
+  31,
+  30,
+  30,
+  30,
+  30,
+  30,
+  30
+ ],
+ "covered": 2748,
+ "compression": 15.4
+}
