@@ -65,7 +65,7 @@ for r in rows:
 want = {"local_only": 80.36, "shared_matched": 80.24, "shared_full": 78.18}
 ok = all(abs(acc.get(k, -1) - v) < 0.02 for k, v in want.items())
 print(f"  [{'PASS' if ok else 'FAIL'}] local_only {acc.get('local_only')}, "
-      f"shared_matched {acc.get('shared_matched')}, shared_full_hetero {acc.get('shared_full_hetero')}")
+      f"shared_matched {acc.get('shared_matched')}, shared_full {acc.get('shared_full')}")
 sys.exit(0 if ok else 1)
 PYTSC
 [ $? -eq 0 ] && r=1 || r=0; chk "cross-client sharing accuracies reproduce" $r
