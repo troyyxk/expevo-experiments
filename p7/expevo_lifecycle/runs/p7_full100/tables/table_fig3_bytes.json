@@ -1,0 +1,57 @@
+[
+ {
+  "dataset": "International Law",
+  "raw_bytes": 6239524,
+  "distilled_bytes": 1400006,
+  "refined_bytes": 426224,
+  "storage_reduction_pct": 69.56,
+  "raw_mb": 6.2395,
+  "dist_mb": 1.4,
+  "ref_mb": 0.4262,
+  "refined_count": 1817
+ },
+ {
+  "dataset": "College Medicine",
+  "raw_bytes": 6149843,
+  "distilled_bytes": 1172049,
+  "refined_bytes": 432431,
+  "storage_reduction_pct": 63.1,
+  "raw_mb": 6.1498,
+  "dist_mb": 1.172,
+  "ref_mb": 0.4324,
+  "refined_count": 2360
+ },
+ {
+  "dataset": "College Biology",
+  "raw_bytes": 5443753,
+  "distilled_bytes": 1225487,
+  "refined_bytes": 307979,
+  "storage_reduction_pct": 74.87,
+  "raw_mb": 5.4438,
+  "dist_mb": 1.2255,
+  "ref_mb": 0.308,
+  "refined_count": 1711
+ },
+ {
+  "dataset": "High School Geography",
+  "raw_bytes": 4247040,
+  "distilled_bytes": 1172946,
+  "refined_bytes": 432349,
+  "storage_reduction_pct": 63.14,
+  "raw_mb": 4.247,
+  "dist_mb": 1.1729,
+  "ref_mb": 0.4323,
+  "refined_count": 2444
+ },
+ {
+  "dataset": "Total",
+  "raw_bytes": 22080160,
+  "distilled_bytes": 4970488,
+  "refined_bytes": 1598983,
+  "storage_reduction_pct": 67.83,
+  "raw_mb": 22.0802,
+  "dist_mb": 4.9705,
+  "ref_mb": 1.599,
+  "refined_count": 8332
+ }
+]

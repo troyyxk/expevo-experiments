@@ -1,0 +1,17 @@
+subject,threshold,full_count,full_bytes,refined_count,refined_bytes,storage_reduction_pct,item_count_reduction_pct,normalized_entry_ratio,overflow_items
+international_law,100,36,8228,36,8228,0.0,0.0,1.0,0
+international_law,80,36,8228,36,8228,0.0,0.0,1.0,0
+international_law,60,36,8228,36,8228,0.0,0.0,1.0,0
+international_law,40,36,8228,29,6340,22.95,19.44,0.8056,0
+college_medicine,100,36,7402,36,7402,0.0,0.0,1.0,0
+college_medicine,80,36,7402,36,7402,0.0,0.0,1.0,0
+college_medicine,60,36,7402,36,7402,0.0,0.0,1.0,0
+college_medicine,40,36,7402,34,6845,7.52,5.56,0.9444,0
+college_biology,100,36,7652,36,7652,0.0,0.0,1.0,0
+college_biology,80,36,7652,36,7652,0.0,0.0,1.0,0
+college_biology,60,36,7652,36,7652,0.0,0.0,1.0,0
+college_biology,40,36,7652,27,5534,27.68,25.0,0.75,0
+high_school_geography,100,36,6595,36,6595,0.0,0.0,1.0,0
+high_school_geography,80,36,6595,36,6595,0.0,0.0,1.0,0
+high_school_geography,60,36,6595,36,6595,0.0,0.0,1.0,0
+high_school_geography,40,36,6595,33,6105,7.43,8.33,0.9167,0

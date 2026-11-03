@@ -1,0 +1,44 @@
+[
+  {
+    "anchor": "exp:high_school_geography/Q000/R00/client2",
+    "members": [
+      "exp:high_school_geography/Q000/R00/client2"
+    ],
+    "size": 1
+  },
+  {
+    "anchor": "exp:high_school_geography/Q000/R01/client3",
+    "members": [
+      "exp:high_school_geography/Q000/R01/client3"
+    ],
+    "size": 1
+  },
+  {
+    "anchor": "exp:high_school_geography/Q001/R00/client0",
+    "members": [
+      "exp:high_school_geography/Q001/R00/client0"
+    ],
+    "size": 1
+  },
+  {
+    "anchor": "exp:high_school_geography/Q001/R01/client1",
+    "members": [
+      "exp:high_school_geography/Q001/R01/client1"
+    ],
+    "size": 1
+  },
+  {
+    "anchor": "exp:high_school_geography/Q002/R00/client2",
+    "members": [
+      "exp:high_school_geography/Q002/R00/client2"
+    ],
+    "size": 1
+  },
+  {
+    "anchor": "exp:high_school_geography/Q002/R01/client3",
+    "members": [
+      "exp:high_school_geography/Q002/R01/client3"
+    ],
+    "size": 1
+  }
+]

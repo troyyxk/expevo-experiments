@@ -1,0 +1,21 @@
+{
+  "api": {
+    "api_calls_billed": 0,
+    "base_url": "https://openrouter.ai/api/v1",
+    "cache_hits": 0,
+    "completion_tokens": 0,
+    "estimated_cost_usd": 0.0,
+    "failures": 0,
+    "model_id": "meta-llama/llama-3.1-8b-instruct",
+    "prompt_tokens": 0,
+    "wall_seconds": 0.0
+  },
+  "finished_at": "2026-10-27T11:12:30+0800",
+  "stage": "refine",
+  "thresholds": [
+    100,
+    80,
+    60,
+    40
+  ]
+}

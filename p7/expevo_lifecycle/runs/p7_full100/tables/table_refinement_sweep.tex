@@ -1,0 +1,31 @@
+\begin{table}[t]
+\centering
+\caption{BM25 threshold sweep on the frozen full repository (6{,}000 experiences per subject). Every threshold is an independent pass started from the same snapshot; \emph{Overflow} counts experiences left unmerged because their group exceeded the condensation budget.}
+\label{tab:refinement_sweep}
+\small
+\begin{tabular}{llrrrrr}
+\toprule
+Subject & $\tau$ & Full & Refined & Ratio & Storage$\downarrow$ & Items$\downarrow$ \\
+\midrule
+International Law & 100 & 6,000 & 4,989 & 0.832 & 19.6\% & 16.9\% \\
+ & 80 & 6,000 & 3,288 & 0.548 & 48.7\% & 45.2\% \\
+ & 60 & 6,000 & 1,817 & 0.303 & 69.6\% & 69.7\% \\
+ & 40 & 6,000 & 1,834 & 0.306 & 63.0\% & 69.4\% \\
+\midrule
+College Medicine & 100 & 6,000 & 5,033 & 0.839 & 20.0\% & 16.1\% \\
+ & 80 & 6,000 & 4,021 & 0.670 & 37.4\% & 33.0\% \\
+ & 60 & 6,000 & 2,360 & 0.393 & 63.1\% & 60.7\% \\
+ & 40 & 6,000 & 2,977 & 0.496 & 47.6\% & 50.4\% \\
+\midrule
+College Biology & 100 & 6,000 & 4,874 & 0.812 & 23.2\% & 18.8\% \\
+ & 80 & 6,000 & 3,379 & 0.563 & 49.5\% & 43.7\% \\
+ & 60 & 6,000 & 1,711 & 0.285 & 74.9\% & 71.5\% \\
+ & 40 & 6,000 & 776 & 0.129 & 86.4\% & 87.1\% \\
+\midrule
+High School Geography & 100 & 6,000 & 5,728 & 0.955 & 6.6\% & 4.5\% \\
+ & 80 & 6,000 & 4,718 & 0.786 & 26.3\% & 21.4\% \\
+ & 60 & 6,000 & 2,444 & 0.407 & 63.1\% & 59.3\% \\
+ & 40 & 6,000 & 942 & 0.157 & 82.0\% & 84.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}

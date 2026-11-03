@@ -1,0 +1,73 @@
+{
+ "run_id": "p10_backend_refinement",
+ "source_run": "/data/xingkun/exp_scale/p7/expevo_lifecycle/runs/p7_full100",
+ "settings": [
+  "Full",
+  "BM25_100",
+  "BM25_80",
+  "BM25_60",
+  "BM25_40"
+ ],
+ "refinement": {
+  "reused_from_p7": 16,
+  "newly_generated": 0,
+  "bm25": {
+   "implementation": "rank_bm25.BM25Okapi",
+   "k1": 1.5,
+   "b": 0.75,
+   "non_symmetric": true,
+   "score_transform": "none",
+   "grouping": "anchor = first unused id in order; candidate joins if S[anchor, candidate] >= threshold",
+   "max_group_words": 3500,
+   "overflow_policy": "retained unmerged, counted in storage and entries"
+  },
+  "condensation": {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "temperature": 0.0,
+   "max_tokens": 512
+  }
+ },
+ "evaluation": {
+  "heldout_questions_per_subject": 55,
+  "retrieval": {
+   "implementation": "rank_bm25.BM25Okapi",
+   "k1": 1.5,
+   "b": 0.75,
+   "top_k": 5,
+   "filter": "none",
+   "order": "score descending, id tie-break",
+   "query": "question + all four options"
+  },
+  "generation": {
+   "model": "meta-llama/llama-3.1-8b-instruct",
+   "temperature": 0.7,
+   "max_tokens": 320,
+   "samples_per_question_per_setting": 10,
+   "seed": null
+  },
+  "scoring": "predicted letter == held-out gold letter; a response with no A-D letter counts as incorrect",
+  "uncertainty": "stratified paired bootstrap over question IDs, 5000 resamples",
+  "heldout_sets": {
+   "original": {
+    "per_subject": 15,
+    "source": "P7 frozen split (Q060-Q074)"
+   },
+   "extended": {
+    "per_subject": 40,
+    "source": "eval/heldout_extended.jsonl",
+    "seed": 20261028,
+    "sha256": "00883db14d3bd325e0703677cafde7f626608812d8d23034d3477fa515be3639"
+   }
+  }
+ },
+ "storage_accounting": {
+  "serializer": "json {topic,content} sort_keys, ensure_ascii=False, compact separators",
+  "mb_divisor": 1000000.0,
+  "excludes": [
+   "ids",
+   "source ids",
+   "api metadata",
+   "bm25 index"
+  ]
+ }
+}

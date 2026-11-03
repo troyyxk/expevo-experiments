@@ -1,0 +1,3 @@
+mode,pairs,total_bytes,avg_bytes_per_item,size_reduction_pct
+raw,24000,22080160,920.006667,
+distilled,24000,4970488,207.103667,77.488895

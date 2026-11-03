@@ -1,0 +1,78 @@
+{
+  "dataset": {
+    "repo": "cais/mmlu",
+    "revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+    "split": "test"
+  },
+  "finished_at": "2026-10-27T11:12:29+0800",
+  "run_id": "p7_smoke",
+  "seed": 20261026,
+  "stage": "prepare_mmlu",
+  "started_at": "2026-10-27T11:12:29+0800",
+  "subjects": {
+    "college_biology": {
+      "construction_ids": [
+        "college_biology/Q000",
+        "college_biology/Q001",
+        "college_biology/Q002"
+      ],
+      "construction_sha256": "076645ec78cb3aaaa756388b79a9c090178df54259f377f1dd97c673a6e752d5",
+      "heldout_ids": [
+        "college_biology/Q003"
+      ],
+      "heldout_sha256": "32f8177f038bc40675c255eb0fcb9bba43a835113636ff1b0a6a946ee723861c",
+      "n_construction": 3,
+      "n_heldout": 1,
+      "n_rows_in_split": 144,
+      "n_sampled": 4
+    },
+    "college_medicine": {
+      "construction_ids": [
+        "college_medicine/Q000",
+        "college_medicine/Q001",
+        "college_medicine/Q002"
+      ],
+      "construction_sha256": "b81a62b2c39146f59c6d46f57ea51698bd3d256a77cc44aeeec0d5ead9b69a2a",
+      "heldout_ids": [
+        "college_medicine/Q003"
+      ],
+      "heldout_sha256": "44a9e6ca4d90f21f8c030e1fe1aa0902a0efb9191a1b8ecfc54586ff371fb258",
+      "n_construction": 3,
+      "n_heldout": 1,
+      "n_rows_in_split": 173,
+      "n_sampled": 4
+    },
+    "high_school_geography": {
+      "construction_ids": [
+        "high_school_geography/Q000",
+        "high_school_geography/Q001",
+        "high_school_geography/Q002"
+      ],
+      "construction_sha256": "691513f6dd6978fb5502990600c66efaad0bf83cc10e9a20b9485df19525cd15",
+      "heldout_ids": [
+        "high_school_geography/Q003"
+      ],
+      "heldout_sha256": "b27c6aed52423a66912cfd0d65538bb8a42a225d50b78479a98fe3a88fc24031",
+      "n_construction": 3,
+      "n_heldout": 1,
+      "n_rows_in_split": 198,
+      "n_sampled": 4
+    },
+    "international_law": {
+      "construction_ids": [
+        "international_law/Q000",
+        "international_law/Q001",
+        "international_law/Q002"
+      ],
+      "construction_sha256": "68428c309d5a4cbb0a4ddc0a4056260c75352252e70a4c6b8d57fb9f36b4ec32",
+      "heldout_ids": [
+        "international_law/Q003"
+      ],
+      "heldout_sha256": "d15fd7bdf44db2f5254d0cb3258008e6b2241d89daf920c66ea9fa8f484049d3",
+      "n_construction": 3,
+      "n_heldout": 1,
+      "n_rows_in_split": 121,
+      "n_sampled": 4
+    }
+  }
+}

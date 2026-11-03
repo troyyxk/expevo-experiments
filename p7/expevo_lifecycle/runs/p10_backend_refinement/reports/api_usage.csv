@@ -1,0 +1,4 @@
+stage,model,requests_ok,requests_err,input_tokens,output_tokens,seconds,est_cost_usd
+heldout_eval,meta-llama/llama-3.1-8b-instruct,3000,0,1390466,252864,656.9,0.0898
+heldout_eval,meta-llama/llama-3.1-8b-instruct,20,0,7680,1825,7.2,0.0005
+heldout_eval,meta-llama/llama-3.1-8b-instruct,8000,0,3406841,680201,1221.2,0.2248

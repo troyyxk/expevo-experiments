@@ -1,0 +1,255 @@
+{
+  "config": {
+    "api": {
+      "api_key": "<redacted>",
+      "base_url": "https://openrouter.ai/api/v1",
+      "input_price_usd_per_1m": 0.05,
+      "max_api_calls": 1500,
+      "max_estimated_cost_usd": 1.0,
+      "max_retries": 5,
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "output_price_usd_per_1m": 0.08,
+      "timeout": 120
+    },
+    "data": {
+      "construction_frac": 0.8,
+      "data_dir": "../data",
+      "dataset_repo": "cais/mmlu",
+      "dataset_revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+      "n_sampled_per_subject": 15,
+      "repeats": 3,
+      "split": "test",
+      "subjects": [
+        "international_law",
+        "college_medicine",
+        "college_biology",
+        "high_school_geography"
+      ]
+    },
+    "prompts": {
+      "condense_max_tokens": 512,
+      "condense_temperature": 0.0,
+      "distill_max_tokens": 160,
+      "distill_temperature": 0.0,
+      "inference_max_tokens": 320,
+      "inference_temperature": 0.7
+    },
+    "refine": {
+      "bm25": {
+        "b": 0.75,
+        "k1": 1.5
+      },
+      "exploratory_thresholds": [],
+      "max_group_words": 3500,
+      "thresholds": [
+        100,
+        80,
+        60,
+        40
+      ]
+    },
+    "run_id": "p7_pilot",
+    "runtime": {
+      "cache_dir": "cache",
+      "max_concurrent": 16,
+      "runs_dir": "runs"
+    },
+    "seed": 20261026
+  },
+  "finished_at": "2026-10-27T11:15:37+0800",
+  "run_id": "p7_pilot",
+  "stages": {
+    "manifest_distill.json": {
+      "api": {
+        "api_calls_billed": 144,
+        "base_url": "https://openrouter.ai/api/v1",
+        "cache_hits": 0,
+        "completion_tokens": 4712,
+        "estimated_cost_usd": 0.002943,
+        "failures": 0,
+        "model_id": "meta-llama/llama-3.1-8b-instruct",
+        "prompt_tokens": 51323,
+        "wall_seconds": 15.8
+      },
+      "experiences_failed": 0,
+      "experiences_ok": 144,
+      "finished_at": "2026-10-27T11:15:24+0800",
+      "per_subject_ok": {
+        "college_biology": 36,
+        "college_medicine": 36,
+        "high_school_geography": 36,
+        "international_law": 36
+      },
+      "stage": "distill"
+    },
+    "manifest_interactions.json": {
+      "api": {
+        "api_calls_billed": 144,
+        "base_url": "https://openrouter.ai/api/v1",
+        "cache_hits": 0,
+        "completion_tokens": 13514,
+        "estimated_cost_usd": 0.002398,
+        "failures": 0,
+        "model_id": "meta-llama/llama-3.1-8b-instruct",
+        "prompt_tokens": 26343,
+        "wall_seconds": 27.1
+      },
+      "episodes_failed": 0,
+      "episodes_ok": 144,
+      "episodes_queued": 144,
+      "finished_at": "2026-10-27T11:15:08+0800",
+      "per_subject_ok": {
+        "college_biology": 36,
+        "college_medicine": 36,
+        "high_school_geography": 36,
+        "international_law": 36
+      },
+      "stage": "run_interactions"
+    },
+    "manifest_prepare.json": {
+      "dataset": {
+        "repo": "cais/mmlu",
+        "revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+        "split": "test"
+      },
+      "finished_at": "2026-10-27T11:14:41+0800",
+      "run_id": "p7_pilot",
+      "seed": 20261026,
+      "stage": "prepare_mmlu",
+      "started_at": "2026-10-27T11:14:41+0800",
+      "subjects": {
+        "college_biology": {
+          "construction_ids": [
+            "college_biology/Q000",
+            "college_biology/Q001",
+            "college_biology/Q002",
+            "college_biology/Q003",
+            "college_biology/Q004",
+            "college_biology/Q005",
+            "college_biology/Q006",
+            "college_biology/Q007",
+            "college_biology/Q008",
+            "college_biology/Q009",
+            "college_biology/Q010",
+            "college_biology/Q011"
+          ],
+          "construction_sha256": "cfc28cb4d9fd719aac39a10ac966dc0f527e05cd2e87a7985476292ba40a5d6d",
+          "heldout_ids": [
+            "college_biology/Q012",
+            "college_biology/Q013",
+            "college_biology/Q014"
+          ],
+          "heldout_sha256": "361a313d30acf8f693e02d98141bc5e0c69a775ce4554ef1464f190efa66f7c0",
+          "n_construction": 12,
+          "n_heldout": 3,
+          "n_rows_in_split": 144,
+          "n_sampled": 15
+        },
+        "college_medicine": {
+          "construction_ids": [
+            "college_medicine/Q000",
+            "college_medicine/Q001",
+            "college_medicine/Q002",
+            "college_medicine/Q003",
+            "college_medicine/Q004",
+            "college_medicine/Q005",
+            "college_medicine/Q006",
+            "college_medicine/Q007",
+            "college_medicine/Q008",
+            "college_medicine/Q009",
+            "college_medicine/Q010",
+            "college_medicine/Q011"
+          ],
+          "construction_sha256": "0b74eb1bb501de65c22f9f3f9788c2a89466f2556ffb1a045c4dcc00becd3e03",
+          "heldout_ids": [
+            "college_medicine/Q012",
+            "college_medicine/Q013",
+            "college_medicine/Q014"
+          ],
+          "heldout_sha256": "07cf3773f97411db591847c9a34b048851ed080c15685bc9cdcb9afa465db9ca",
+          "n_construction": 12,
+          "n_heldout": 3,
+          "n_rows_in_split": 173,
+          "n_sampled": 15
+        },
+        "high_school_geography": {
+          "construction_ids": [
+            "high_school_geography/Q000",
+            "high_school_geography/Q001",
+            "high_school_geography/Q002",
+            "high_school_geography/Q003",
+            "high_school_geography/Q004",
+            "high_school_geography/Q005",
+            "high_school_geography/Q006",
+            "high_school_geography/Q007",
+            "high_school_geography/Q008",
+            "high_school_geography/Q009",
+            "high_school_geography/Q010",
+            "high_school_geography/Q011"
+          ],
+          "construction_sha256": "6ad7e835ede668df787d0a3d917c6b020ae64f5ca193d8a2e24fcc11c9be2a44",
+          "heldout_ids": [
+            "high_school_geography/Q012",
+            "high_school_geography/Q013",
+            "high_school_geography/Q014"
+          ],
+          "heldout_sha256": "3029fbffd23e6827689f83334753900e03c4fa8d24c0289b7d842dabe510bc03",
+          "n_construction": 12,
+          "n_heldout": 3,
+          "n_rows_in_split": 198,
+          "n_sampled": 15
+        },
+        "international_law": {
+          "construction_ids": [
+            "international_law/Q000",
+            "international_law/Q001",
+            "international_law/Q002",
+            "international_law/Q003",
+            "international_law/Q004",
+            "international_law/Q005",
+            "international_law/Q006",
+            "international_law/Q007",
+            "international_law/Q008",
+            "international_law/Q009",
+            "international_law/Q010",
+            "international_law/Q011"
+          ],
+          "construction_sha256": "9dfbd854b27f148996bca2714ba2807260d7f243cd3dd010e64e783f6cebb69a",
+          "heldout_ids": [
+            "international_law/Q012",
+            "international_law/Q013",
+            "international_law/Q014"
+          ],
+          "heldout_sha256": "6d5b431fb8e902a033fe8f3a1c4e62ba98d875957da3d8d47a01adc5314e345e",
+          "n_construction": 12,
+          "n_heldout": 3,
+          "n_rows_in_split": 121,
+          "n_sampled": 15
+        }
+      }
+    },
+    "manifest_refine.json": {
+      "api": {
+        "api_calls_billed": 14,
+        "base_url": "https://openrouter.ai/api/v1",
+        "cache_hits": 0,
+        "completion_tokens": 669,
+        "estimated_cost_usd": 0.000204,
+        "failures": 0,
+        "model_id": "meta-llama/llama-3.1-8b-instruct",
+        "prompt_tokens": 3008,
+        "wall_seconds": 10.5
+      },
+      "finished_at": "2026-10-27T11:15:35+0800",
+      "stage": "refine",
+      "thresholds": [
+        100,
+        80,
+        60,
+        40
+      ]
+    }
+  },
+  "started_by": "run_all",
+  "wall_seconds": 56.5
+}

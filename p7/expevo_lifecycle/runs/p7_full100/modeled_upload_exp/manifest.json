@@ -1,0 +1,66 @@
+{
+ "method": "analytical_D_over_R",
+ "network_measurement": false,
+ "llm_calls": 0,
+ "created": "2026-11-03T21:11:11",
+ "run_dir": "/tmp/pub/p7/expevo_lifecycle/runs/p7_full100",
+ "output_dir": "/tmp/pub/p7/expevo_lifecycle/runs/p7_full100/modeled_upload_exp",
+ "subjects": {
+  "international_law": {
+   "paired_count": 6000,
+   "raw_bytes_total": 6239524,
+   "distilled_bytes_total": 1400006,
+   "sha256_episodes": "b8ac3da1e4140ac5c7a3e1271dde668f59667d899dc47b2f4db63511f5c50797",
+   "sha256_experiences": "a037e64b2150ebe25214939dadb80b6290d4ad11caad7dbe5d99f55dc069cdce"
+  },
+  "college_medicine": {
+   "paired_count": 6000,
+   "raw_bytes_total": 6149843,
+   "distilled_bytes_total": 1172049,
+   "sha256_episodes": "aaccf3fc4010b4a35ddd069f0bc1d0f8844673b2ccad3ebc54ce97d2935a1cb5",
+   "sha256_experiences": "4f46bc592fb246e56054319aa1a17554e145ef784f2e151e1e36f5a749ac888e"
+  },
+  "college_biology": {
+   "paired_count": 6000,
+   "raw_bytes_total": 5443753,
+   "distilled_bytes_total": 1225487,
+   "sha256_episodes": "e748aff5a3397eaddede2dc8fa73b815a016e49c4558baeb98042d3d52cb82b5",
+   "sha256_experiences": "237843239cf420f6ed65870ba035caa79014556d5f2dd933e49f17e64a39d042"
+  },
+  "high_school_geography": {
+   "paired_count": 6000,
+   "raw_bytes_total": 4247040,
+   "distilled_bytes_total": 1172946,
+   "sha256_episodes": "2002894c564e9d5f4d27bb1a69629ac64eae4cd660359ef6c529ef172b8d4468",
+   "sha256_experiences": "59b62a585dffe315a3a305a780519ca90c5cbb25ff66fe2819c014558c9860bf"
+  }
+ },
+ "pairs": 24000,
+ "total_raw_bytes": 22080160,
+ "total_distilled_bytes": 4970488,
+ "payload_saving_pct": 77.48889500800719,
+ "rates_mbps": [
+  1,
+  5,
+  10,
+  20,
+  50
+ ],
+ "serializer": {
+  "module": "scripts/p9_modeled_upload.py:serialize_item",
+  "sha256": "0c3443e44f4ec2f13bfbe7512af1781d32eadc6922ac97dc374b9ab9ffed495a"
+ },
+ "validation": {
+  "fig3_cross_check": {
+   "checked": true,
+   "file": "/tmp/pub/p7/expevo_lifecycle/runs/p7_full100/tables/table_fig3_bytes.csv",
+   "rows_matched": 4
+  },
+  "per_item_mean_vs_aggregate": "equal to 1e-9",
+  "saving_rate_independent": "asserted"
+ },
+ "environment": {
+  "python": "3.12.3",
+  "platform": "Linux-6.14.0-32-generic-x86_64-with-glibc2.39"
+ }
+}

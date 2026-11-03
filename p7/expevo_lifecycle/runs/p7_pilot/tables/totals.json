@@ -1,0 +1,12 @@
+{
+  "overall_storage_reduction_bm100_pct": 0.0,
+  "overall_upload_reduction_pct": 79.72,
+  "totals": {
+    "dist": 29877,
+    "full": 29877,
+    "n_dist": 144,
+    "n_raw": 144,
+    "raw": 147293,
+    "ref100": 29877
+  }
+}

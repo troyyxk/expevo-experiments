@@ -1,0 +1,6 @@
+subject,paired_count,raw_bytes_total,distilled_bytes_total,payload_saving_pct
+International Law,6000,6239524,1400006,77.562295
+College Medicine,6000,6149843,1172049,80.941806
+College Biology,6000,5443753,1225487,77.488196
+High School Geography,6000,4247040,1172946,72.382035
+Total,24000,22080160,4970488,77.488895

@@ -1,0 +1,98 @@
+{
+  "note": "ALGORITHM VARIANT",
+  "rounds": [
+    {
+      "stats": [
+        {
+          "bytes": 75276,
+          "count": 327,
+          "merged_groups": 0,
+          "round": 0
+        },
+        {
+          "bytes": 65109,
+          "count": 291,
+          "merged_groups": 20,
+          "round": 1
+        },
+        {
+          "bytes": 62808,
+          "count": 281,
+          "merged_groups": 4,
+          "round": 2
+        }
+      ],
+      "subject": "international_law"
+    },
+    {
+      "stats": [
+        {
+          "bytes": 73026,
+          "count": 398,
+          "merged_groups": 0,
+          "round": 0
+        },
+        {
+          "bytes": 52789,
+          "count": 291,
+          "merged_groups": 12,
+          "round": 1
+        },
+        {
+          "bytes": 28241,
+          "count": 159,
+          "merged_groups": 2,
+          "round": 2
+        }
+      ],
+      "subject": "college_medicine"
+    },
+    {
+      "stats": [
+        {
+          "bytes": 73122,
+          "count": 383,
+          "merged_groups": 0,
+          "round": 0
+        },
+        {
+          "bytes": 68914,
+          "count": 365,
+          "merged_groups": 14,
+          "round": 1
+        },
+        {
+          "bytes": 67567,
+          "count": 360,
+          "merged_groups": 5,
+          "round": 2
+        }
+      ],
+      "subject": "college_biology"
+    },
+    {
+      "stats": [
+        {
+          "bytes": 82584,
+          "count": 468,
+          "merged_groups": 0,
+          "round": 0
+        },
+        {
+          "bytes": 80259,
+          "count": 456,
+          "merged_groups": 9,
+          "round": 1
+        },
+        {
+          "bytes": 79241,
+          "count": 450,
+          "merged_groups": 2,
+          "round": 2
+        }
+      ],
+      "subject": "high_school_geography"
+    }
+  ],
+  "threshold": 60.0
+}

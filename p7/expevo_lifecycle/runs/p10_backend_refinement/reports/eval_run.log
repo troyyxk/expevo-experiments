@@ -1,0 +1,32 @@
+[eval] 3000 samples to run (10/question, top_k=5)
+[eval] 100 done, 0 errors
+[eval] 200 done, 0 errors
+[eval] 300 done, 0 errors
+[eval] 400 done, 0 errors
+[eval] 500 done, 0 errors
+[eval] 600 done, 0 errors
+[eval] 700 done, 0 errors
+[eval] 800 done, 0 errors
+[eval] 900 done, 0 errors
+[eval] 1000 done, 0 errors
+[eval] 1100 done, 0 errors
+[eval] 1200 done, 0 errors
+[eval] 1300 done, 0 errors
+[eval] 1400 done, 0 errors
+[eval] 1500 done, 0 errors
+[eval] 1600 done, 0 errors
+[eval] 1700 done, 0 errors
+[eval] 1800 done, 0 errors
+[eval] 1900 done, 0 errors
+[eval] 2000 done, 0 errors
+[eval] 2100 done, 0 errors
+[eval] 2200 done, 0 errors
+[eval] 2300 done, 0 errors
+[eval] 2400 done, 0 errors
+[eval] 2500 done, 0 errors
+[eval] 2600 done, 0 errors
+[eval] 2700 done, 0 errors
+[eval] 2800 done, 0 errors
+[eval] 2900 done, 0 errors
+[eval] 3000 done, 0 errors
+[eval] done in 10.9 min: ok=3000 err=0 tokens_in=1390466 tokens_out=252864 est_cost=$0.0898

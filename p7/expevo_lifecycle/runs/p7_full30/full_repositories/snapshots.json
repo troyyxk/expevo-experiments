@@ -1,0 +1,34 @@
+{
+  "finished_at": "2026-10-27T12:41:29+0800",
+  "stage": "route_and_store",
+  "subjects": {
+    "college_biology": {
+      "full_bytes": 363100,
+      "full_count": 1800,
+      "n_episodes": 1800,
+      "n_experiences": 1800,
+      "snapshot_sha256": "c8586d54648532800fcebed77c211c35099c96f900468283e2a238a58835c5a5"
+    },
+    "college_medicine": {
+      "full_bytes": 343077,
+      "full_count": 1800,
+      "n_episodes": 1800,
+      "n_experiences": 1800,
+      "snapshot_sha256": "552303460f5ed3904d8b31e0be19990afc09a89031d2b7fc55e5749b3f5eae4c"
+    },
+    "high_school_geography": {
+      "full_bytes": 340478,
+      "full_count": 1800,
+      "n_episodes": 1800,
+      "n_experiences": 1800,
+      "snapshot_sha256": "41391ba3bb33fa7f699787fea745b4b3ee4a072e7d5ba531626ed456ae480cdd"
+    },
+    "international_law": {
+      "full_bytes": 412638,
+      "full_count": 1800,
+      "n_episodes": 1800,
+      "n_experiences": 1800,
+      "snapshot_sha256": "6a25dcb15133a46339391bc7fe9608636a3cb06c84742ae9bb691690ad9652b7"
+    }
+  }
+}
