@@ -17,16 +17,16 @@ cov = {r["condition"]: r for r in csv.DictReader(open(os.path.join(HERE, "result
 sweep = {int(r["coverage_questions"]): r for r in csv.DictReader(open(os.path.join(HERE, "results", "coverage_sweep.csv")))}
 
 points = [
-    ("Local-only\n(15/60)", float(cov["Local-only"]["accuracy_percent"]),
+    ("Local-only", float(cov["Local-only"]["accuracy_percent"]),
      float(cov["Local-only"]["ci_lower"]), float(cov["Local-only"]["ci_upper"]), "#3b6ea5"),
-    ("Shared\n(45/60)", float(sweep[45]["accuracy_percent"]),
+    ("Shared", float(sweep[45]["accuracy_percent"]),
      float(sweep[45]["ci_lower"]), float(sweep[45]["ci_upper"]), "#5f7f4a"),
-    ("Shared-matched\n(60/60)", float(cov["Shared-matched"]["accuracy_percent"]),
+    ("Shared-matched", float(cov["Shared-matched"]["accuracy_percent"]),
      float(cov["Shared-matched"]["ci_lower"]), float(cov["Shared-matched"]["ci_upper"]), "#4a8f5b"),
 ]
 
-fig, ax = plt.subplots(figsize=(3.45, 2.62))
-fig.subplots_adjust(left=0.175, right=0.975, top=0.955, bottom=0.225)
+fig, ax = plt.subplots(figsize=(3.45, 2.45))
+fig.subplots_adjust(left=0.175, right=0.975, top=0.955, bottom=0.165)
 for x, (label, acc, lo, hi, col) in enumerate(points):
     ax.plot([x, x], [lo, hi], "-", color=col, lw=1.5)
     ax.plot([x - 0.11, x + 0.11], [lo, lo], "-", color=col, lw=1.0)
