@@ -34,7 +34,8 @@ committed here, and every figure/table is a deterministic function of them.
 ├── fig6_network_simulation/      ★ multi-client queueing simulation (Fig. 6)
 ├── p9/                           Linux tc/netns emulated upload measurement
 ├── repro/                        first-round reproduction of the NMI paper's Fig. 3–6
-├── runs/tsc_collaboration/       ★ cross-client sharing experiment (TSC revision, V.C)
+├── runs/tsc_collaboration/       ★ cross-client sharing, matched coverage (TSC revision, V.C)
+├── runs/tsc_collaboration_hetero/ ★ cross-client sharing, complementary coverage
 └── deliverables/                 final PDFs and LaTeX snippets used in the manuscript
 ```
 
@@ -53,6 +54,7 @@ committed here, and every figure/table is a deterministic function of them.
 | supporting | analytical `D/R` upload-time baseline | the same payload bytes | `scripts/p9_modeled_upload.py` |
 | supporting | emulated upload over a shaped link | 1,200 real HTTP transfers at 5 rates | `p9/` |
 | **TSC Fig. + Table**, V-C | does sharing help versus a local-only pool of the same size? | 2,750 answers over 4 client pools × 55 questions | `runs/tsc_collaboration/scripts/*` |
+| **TSC hetero**, V-C | does it still help when clients cover *complementary* questions? | 2,750 answers, 375-vs-375 entry-matched, 60-question coverage | `runs/tsc_collaboration_hetero/scripts/*` |
 
 ### Source run `p7_full100`
 
@@ -98,6 +100,19 @@ the shared pool matched to the same entry count so that repository *size* is not
 
 Paired differences vs Local-only: −0.12, −2.06 and −2.18 pp; every interval includes zero, so sharing
 does not measurably help or hurt on this pool — the result is reported as a null effect rather than a gain.
+
+The **complementary-coverage** variant (`runs/tsc_collaboration_hetero/`) repeats the comparison when each
+client has seen a different 15 of the 60 construction questions: local pools of 375 vs an entry-matched
+375-entry shared pool that covers all 60 questions.
+
+| Policy | Entries | Clients | Construction questions covered | Accuracy (%) [95 % CI] |
+|---|---:|---:|---:|---|
+| Local-only | 375 | 1 | 15 | 81.45 [72.36, 89.82] |
+| Shared-matched | 375 | 4 | 60 | 80.48 [71.76, 88.43] |
+| Shared-full-hetero | 1,500 | 4 | 60 | 80.73 [71.82, 88.73] |
+
+Paired Δ = −0.97, +0.24, −0.73 pp, again all including zero: broadening coverage does not shift accuracy
+at this scale, so the paper can only claim *comparable* quality, not an improvement.
 
 ---
 

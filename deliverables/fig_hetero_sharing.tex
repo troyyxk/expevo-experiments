@@ -1,0 +1,14 @@
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{images/fig_hetero_sharing.pdf}
+    \caption{Retrospective heterogeneous client coverage on MMLU High School Geography. Each of the four
+    clients keeps only its own 25 experiences on a disjoint set of 15 construction questions, so that a
+    single client covers a quarter of the construction space and their union covers all 60 questions.
+    (a) Inference accuracy on the same 55 unseen questions for local-only access, an entry-count-matched
+    shared pool covering all 60 questions, and the full 1{,}500-entry union; the three matched pools are
+    shown as small hollow markers. (b) Question-level paired accuracy differences. Each question is
+    answered ten times; error bars are 95\% confidence intervals from a paired question-level bootstrap.
+    The heterogeneous exposure is constructed retrospectively from a corpus in which all clients had
+    originally seen the same questions.}
+    \label{fig:hetero_sharing}
+\end{figure*}

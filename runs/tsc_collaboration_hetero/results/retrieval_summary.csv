@@ -1,0 +1,4 @@
+policy,n_queries,mean_retrieved_tokens,mean_top5_other_clients,mean_distinct_source_questions
+local_only,55,139.13,0.0,2.25
+shared_matched,165,135.82,3.59,2.88
+shared_full_hetero,55,133.8,3.65,2.38

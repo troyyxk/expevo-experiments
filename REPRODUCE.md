@@ -76,6 +76,28 @@ Re-running the 2,200 answers (the only API phase) needs `EXPEVO_ENV=/path/to/.en
 
 ---
 
+## V.C (TSC revision) — heterogeneous coverage experiment
+
+```bash
+cd runs/tsc_collaboration_hetero && ./scripts/run_all_hetero.sh      # no API
+```
+
+| Step | Script | Out |
+|---|---|---|
+| 1 | `audit_inputs.py` | `manifests/input_audit.json` |
+| 2 | `build_hetero_pools.py` | 4 local pools (375), 3 matched pools (375), the 1,500 union, `config/question_partition.json` |
+| 3 | `retrieve_hetero.py` | `retrieval/retrieval_diagnostics.csv`, `results/retrieval_summary.csv` |
+| 4 | `aggregate_hetero.py` | per-question, per-pool, paired differences, 5,000 bootstrap replicates |
+| 5 | `plot_hetero.py --mode real` | `figures/fig_hetero_sharing.{pdf,png}` |
+| 6 | `export_hetero_table.py` | `latex/table_hetero.tex` |
+
+Expected: Local-only **81.45 %** [72.36, 89.82], Shared-matched **80.48 %** [71.76, 88.43],
+Shared-full-hetero **80.73 %** [71.82, 88.73]; paired Δ = −0.97, +0.24, −0.73 pp, all CIs including zero.
+
+Re-running the 2,750 answers needs the API: `EXPEVO_ENV=/path/to/.env python3 scripts/evaluate_hetero.py`.
+
+---
+
 ## File inventory you can diff against
 
 After `./run_all.sh` the following are rewritten (all deterministic):
@@ -89,4 +111,5 @@ p7/expevo_lifecycle/runs/p10_backend_refinement/{tables,figures,reports}/*
 fig6_network_simulation/{data,results,images}/*
 p9/results/full_20261027_194400/{trial_summary,condition_summary,saving_summary}.csv
 runs/tsc_collaboration/{results,figures,latex}/*
+runs/tsc_collaboration_hetero/{results,figures,latex}/*
 ```

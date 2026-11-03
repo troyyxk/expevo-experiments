@@ -1,0 +1,7 @@
+policy,n_questions,n_responses,accuracy_percent,ci_lower_percent,ci_upper_percent,mean_retrieved_tokens
+local_only,55,550,81.455,72.364,89.818,127.8
+shared_matched,55,550,80.485,71.758,88.426,141.2
+shared_full_hetero,55,550,80.727,71.818,88.727,133.8
+shared_matched_20261109,55,550,80.545,71.636,88.727,141.2
+shared_matched_20261110,55,550,78.727,69.091,87.455,129.9
+shared_matched_20261111,55,550,82.182,73.455,90.000,136.3

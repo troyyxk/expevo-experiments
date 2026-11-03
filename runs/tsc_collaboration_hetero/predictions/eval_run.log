@@ -1,0 +1,16 @@
+[eval] resume: 5 samples already present
+[eval] tasks: 2745 (reuse_shared_full=False)
+[eval] 200 done, 0 errors
+[eval] 400 done, 0 errors
+[eval] 600 done, 0 errors
+[eval] 800 done, 0 errors
+[eval] 1000 done, 0 errors
+[eval] 1200 done, 0 errors
+[eval] 1400 done, 0 errors
+[eval] 1600 done, 0 errors
+[eval] 1800 done, 0 errors
+[eval] 2000 done, 0 errors
+[eval] 2200 done, 0 errors
+[eval] 2400 done, 0 errors
+[eval] 2600 done, 0 errors
+[eval] finished in 10.8 min: ok=2745 err=0 tokens 968871/184068 est $0.0632

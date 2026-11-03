@@ -1,0 +1,39 @@
+{
+ "subject": "high_school_geography",
+ "n_episodes": 6000,
+ "n_experiences": 6000,
+ "n_full": 6000,
+ "n_unique_experience_ids": 6000,
+ "n_construction_questions": 60,
+ "clients": {
+  "0": 1500,
+  "1": 1500,
+  "2": 1500,
+  "3": 1500
+ },
+ "per_client_question_counts": {
+  "25": 240
+ },
+ "experiences_without_episode": 0,
+ "hashes": {
+  "episodes": "2002894c564e9d5f4d27bb1a69629ac64eae4cd660359ef6c529ef172b8d4468",
+  "experiences": "59b62a585dffe315a3a305a780519ca90c5cbb25ff66fe2819c014558c9860bf",
+  "full_repository": "4b0bcc869b7285e73e912041bcdc57fa495e08e9001f1e8ba4ad4c2944334485"
+ },
+ "evaluation": {
+  "n_questions": 55,
+  "by_set": {
+   "original": 15,
+   "extended": 40
+  },
+  "client_counts": {
+   "0": 14,
+   "1": 14,
+   "2": 14,
+   "3": 13
+  },
+  "overlap_with_construction": 0,
+  "assignment_seed": 20261106,
+  "sha256": "4c7deaf146715b600431fc7c0424c47a5814b1fcf7b5e95a48763fb55ce86584"
+ }
+}

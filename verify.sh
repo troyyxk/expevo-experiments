@@ -65,10 +65,27 @@ for r in rows:
 want = {"local_only": 80.36, "shared_matched": 80.24, "shared_full": 78.18}
 ok = all(abs(acc.get(k, -1) - v) < 0.02 for k, v in want.items())
 print(f"  [{'PASS' if ok else 'FAIL'}] local_only {acc.get('local_only')}, "
-      f"shared_matched {acc.get('shared_matched')}, shared_full {acc.get('shared_full')}")
+      f"shared_matched {acc.get('shared_matched')}, shared_full_hetero {acc.get('shared_full_hetero')}")
 sys.exit(0 if ok else 1)
 PYTSC
 [ $? -eq 0 ] && r=1 || r=0; chk "cross-client sharing accuracies reproduce" $r
+
+echo "== TSC heterogeneous coverage =="
+$PY - <<'PYHET'
+import csv, sys
+rows = list(csv.DictReader(open("runs/tsc_collaboration_hetero/results/accuracy_by_pool.csv")))
+acc = {}
+for r in rows:
+    p = r["policy"]
+    if p in ("local_only", "shared_matched", "shared_full_hetero"):
+        acc[p] = round(float(r["accuracy_percent"]), 2)
+want = {"local_only": 81.45, "shared_matched": 80.48, "shared_full_hetero": 80.73}
+ok = all(abs(acc.get(k, -1) - v) < 0.02 for k, v in want.items())
+print(f"  [{'PASS' if ok else 'FAIL'}] local_only {acc.get('local_only')}, "
+      f"shared_matched {acc.get('shared_matched')}, shared_full_hetero {acc.get('shared_full_hetero')}")
+sys.exit(0 if ok else 1)
+PYHET
+[ $? -eq 0 ] && r=1 || r=0; chk "heterogeneous coverage accuracies reproduce" $r
 
 echo
 if [ "$fail" -eq 0 ]; then echo "ALL CHECKS PASSED"; else echo "$fail CHECK(S) FAILED"; fi

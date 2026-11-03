@@ -2,7 +2,7 @@
  "method": "analytical_D_over_R",
  "network_measurement": false,
  "llm_calls": 0,
- "created": "2026-11-03T21:19:10",
+ "created": "2026-11-03T22:03:33",
  "run_dir": "/data/xingkun/exp_scale/p7/expevo_lifecycle/runs/p7_full100",
  "output_dir": "/data/xingkun/exp_scale/p7/expevo_lifecycle/runs/p7_full100/modeled_upload_exp",
  "subjects": {
