@@ -1,0 +1,27 @@
+{
+ "subject": "high_school_geography",
+ "pool_seeds": [
+  20261103,
+  20261104,
+  20261105
+ ],
+ "assign_seed": 20261106,
+ "n_experiences": 6000,
+ "client_counts": {
+  "0": 1500,
+  "1": 1500,
+  "2": 1500,
+  "3": 1500
+ },
+ "hashes": {
+  "full": "ceb04055038a1cb81e13c8309c720327311caa73f2556d9bae3d18bbfe8e68c2",
+  "matched_20261103": "23480d628f5f06f7e6b62b337a580809cafa40d48fc9a32c964f4d1a020976dc",
+  "matched_20261104": "7d986aa7f32ade47b6c1b718048cf8d8a6942fbff5cdccb87b39636fcfb93c18",
+  "matched_20261105": "ecb59bfe641c0911e409f99df9f596355716de0b0431bedba082ad6ca0a7588a"
+ },
+ "per_construction_question": {
+  "local": 25,
+  "matched": 25,
+  "full": 100
+ }
+}

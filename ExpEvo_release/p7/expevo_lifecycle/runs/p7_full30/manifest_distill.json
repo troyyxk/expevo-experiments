@@ -1,0 +1,23 @@
+{
+  "api": {
+    "api_calls_billed": 4787,
+    "base_url": "https://openrouter.ai/api/v1",
+    "cache_hits": 2413,
+    "completion_tokens": 152278,
+    "estimated_cost_usd": 0.092695,
+    "failures": 0,
+    "model_id": "meta-llama/llama-3.1-8b-instruct",
+    "prompt_tokens": 1610261,
+    "wall_seconds": 373.6
+  },
+  "experiences_failed": 0,
+  "experiences_ok": 7200,
+  "finished_at": "2026-10-27T12:41:29+0800",
+  "per_subject_ok": {
+    "college_biology": 1800,
+    "college_medicine": 1800,
+    "high_school_geography": 1800,
+    "international_law": 1800
+  },
+  "stage": "distill"
+}

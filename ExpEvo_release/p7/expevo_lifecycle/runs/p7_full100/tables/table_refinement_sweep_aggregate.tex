@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Threshold sweep for the backend refinement stage (four MMLU subjects, 6{,}000 experiences each, 24{,}000 total). Each row is an independent condensation pass started from the same frozen full snapshot. $\tau=60$ is the exploratory setting used in Fig.~\ref{fig:lifecycle_footprint_tau60}; $\tau=40$ is context-limited, i.e.\ the reported reduction is a lower bound.}
+\label{tab:refinement_sweep}
+\small
+\begin{tabular}{rrrrrr}
+\toprule
+$\tau$ & Full & Refined & Ratio & Storage$\downarrow$ & Items$\downarrow$ \\
+\midrule
+100 & 24,000 & 20,624 & 0.859 & 17.5\% & 14.1\% \\
+80 & 24,000 & 15,406 & 0.642 & 40.9\% & 35.8\% \\
+60 & 24,000 & 8,332 & 0.347 & 67.8\% & 65.3\% \\
+40 & 24,000 & 6,529 & 0.272 & 69.6\% & 72.8\% \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,29 @@
+% Two paragraphs for Section V.C of the TSC revision (after the matched-entry-count comparison).
+% Numbers come from results/*.csv; do not edit by hand.
+
+\paragraph{Complementary coverage}
+The preceding comparison gives every client the same construction questions, so sharing mainly mixes
+sources. We therefore construct a second, harder setting in which coverage itself is complementary. The
+60 construction questions are partitioned into four disjoint sets of 15 (seed 20261108), and client $c$
+keeps only its own 25 experiences on the questions in its set. A single client therefore holds 375
+experiences covering a quarter of the construction space, while the union of the four local pool covers
+all 60 questions with 1{,}500 experiences. Three regimes are compared: \emph{Local-only} (the requesting
+client's 375 experiences), \emph{Shared-matched} (a 375-entry pool drawn from the union, covering all 60
+questions with six or seven entries each and at most 94 entries per client), rebuilt from three
+preselected seeds, and \emph{Shared-full-hetero} (the 1{,}500-entry union). This exposure is constructed
+retrospectively from a corpus in which every client originally saw the same questions; it is not a
+record of clients that sampled disjoint tasks online.
+
+\paragraph{Results}
+Local-only reaches 81.45\% (95\% CI [72.36, 89.82]), Shared-matched 80.48\% ([71.76, 88.43]) and
+Shared-full-hetero 80.73\% ([71.82, 88.73]). Sharing experience that covers the three quarters of the
+construction space a client has never seen does not raise accuracy: the paired difference is
+$-0.97$ percentage points ([-4.06, +2.12]). Expanding the matched pool to the full union likewise
+changes nothing measurable ($+0.24$ points, [-2.73, +3.09]), and the overall union-versus-local gap is
+$-0.73$ points ([-3.82, +2.36]). The three matched pools individually score 80.55\%, 78.73\% and
+82.18\%, a spread that again exceeds every between-policy difference. Retrieval confirms that the
+manipulation is real: in the matched pools 3.6 of the five retrieved experiences come from clients other
+than the requester, and their Top-5 sets overlap only 21\% with the full union. Within this controlled
+setting, cross-client coverage therefore does not translate into measurable accuracy gains; the
+contribution of sharing remains the reduction in communication and storage cost rather than an accuracy
+uplift.

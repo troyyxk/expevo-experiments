@@ -1,0 +1,27 @@
+% Two paragraphs for Section V.C (after the epoch-accuracy discussion of Fig. 4).
+% Numbers computed from results/*.csv; do not edit by hand.
+
+\paragraph{Controlled cross-client sharing}
+We isolate the effect of sharing experiences across clients on a single topic, MMLU High School
+Geography, holding the evaluation conditions fixed. The frozen repository contains 6{,}000 distilled
+experiences contributed by four clients, exactly 25 per construction question per client. Three
+candidate pools are compared. \emph{Local-only} exposes the requesting client's own 1{,}500 experiences;
+\emph{Shared-matched} exposes a 1{,}500-entry pool drawn evenly from all four clients (375 each, 25 per
+construction question); \emph{Shared-full} exposes all 6{,}000. The matched pool is rebuilt
+independently from three preselected seeds (20261103, 20261104, 20261105) and the same pool serves every
+request. Each of the 55 unseen questions is answered ten times by the requesting client's assigned
+identity, with BM25 retrieval of the top five experiences and identical model, prompt and decoding
+settings across pools; only the retrievable set differs. Accuracy is averaged over questions, and
+confidence intervals come from a paired bootstrap that resamples the 55 question keys.
+
+\paragraph{Results}
+Local-only reaches 80.36\% (95\% CI [70.73, 88.37]), Shared-matched 80.24\% ([71.39, 88.18]) and
+Shared-full 78.18\% ([69.27, 86.55]). Mixing experiences from the four clients therefore does not change
+accuracy at a matched candidate count: the paired difference is $-0.12$ percentage points
+([-3.03, +2.73]). Expanding the matched pool to the full 6{,}000 experiences likewise shows no gain;
+the difference is $-2.06$ percentage points ([-6.18, +2.00]) and the overall full-versus-local gap is
+$-2.18$ points ([-6.55, +2.18]). The three matched pools individually score 79.27\%, 82.00\% and
+79.45\%, so the pool-to-pool spread is comparable to the differences between policies. All intervals
+include zero, so within this controlled setting the measured accuracy is consistent with the local
+baseline; the experiment does not support a claim that cross-client sharing improves accuracy, nor that
+it degrades it.

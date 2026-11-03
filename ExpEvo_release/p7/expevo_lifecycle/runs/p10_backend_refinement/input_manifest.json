@@ -1,0 +1,51 @@
+{
+ "run_id": "p10_backend_refinement",
+ "source_run": "/data/xingkun/exp_scale/ExpEvo_release/p7/expevo_lifecycle/runs/p7_full100",
+ "subjects": [
+  "international_law",
+  "college_medicine",
+  "college_biology",
+  "high_school_geography"
+ ],
+ "settings": [
+  "Full",
+  "BM25_100",
+  "BM25_80",
+  "BM25_60",
+  "BM25_40"
+ ],
+ "thresholds": [
+  100,
+  80,
+  60,
+  40
+ ],
+ "full_counts": {
+  "international_law": 6000,
+  "college_medicine": 6000,
+  "college_biology": 6000,
+  "high_school_geography": 6000
+ },
+ "full_bytes_total": 4970488,
+ "full_sha256": {
+  "international_law": "6960e845b336f3c2d3d9a9065e258ef2aecd115361bdfeac7baa259554ffc866",
+  "college_medicine": "ba070b7dddf547083401ba657b8d9a6fff05b260f43c2e0df1069bd2b14dd5fb",
+  "college_biology": "519e002ce2cc2e6f68e9876fbbf21c17126da423d178dc858dce8f67288fdd8b",
+  "high_school_geography": "4b0bcc869b7285e73e912041bcdc57fa495e08e9001f1e8ba4ad4c2944334485"
+ },
+ "heldout_sha256": {
+  "international_law": "df3f5721ad4061b2e4cf150a52904f5e28e7d0be1d036299e737f8c441987347",
+  "college_medicine": "0e3258588870fc07084a5e6afc508457a0fd1263a72d7d1b7f8c7d4eee3dd14a",
+  "college_biology": "090d29ae4d71b4b0dd46f21bddf449da1750cca41a5fbace1171a6a1fbe08197",
+  "high_school_geography": "e4b536d637e4ef95c05866a7235a7daef602b979fd82182efec05f40c38446bc"
+ },
+ "refinement_reused": 16,
+ "refinement_new": 0,
+ "serializer": "scripts/run_refinement.py:serialize_item (identical to src/common.py)",
+ "bm25": {
+  "implementation": "rank_bm25.BM25Okapi",
+  "k1": 1.5,
+  "b": 0.75,
+  "note": "directed similarity matrix, raw scores, no rescaling"
+ }
+}

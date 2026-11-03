@@ -18,7 +18,6 @@ ExperienceScaling/
 2509.18771v1.pdf
 HANDOFF/
 fig6_sim/
-ExpEvo_release/
 
 # the P7 project keeps its own .gitignore for runs/; runs ARE tracked here
 !p7/expevo_lifecycle/runs/

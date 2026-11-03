@@ -1,0 +1,9 @@
+prompt_contract,condition,accuracy_percent,delta_vs_plain_pp,delta_ci_lower,delta_ci_upper
+epoch #### contract,plain,52.36,+0.00,+0.00,+0.00
+epoch #### contract,Local-only,51.09,-1.27,-9.45,+6.91
+epoch #### contract,Shared-matched,52.06,-0.30,-7.82,+7.45
+epoch #### contract,Shared-full-hetero,49.45,-2.91,-10.36,+4.36
+JSON letter contract,plain,80.55,+0.00,+0.00,+0.00
+JSON letter contract,Local-only,81.45,+0.91,-3.27,+4.55
+JSON letter contract,Shared-matched,80.48,-0.06,-4.91,+4.91
+JSON letter contract,Shared-full-hetero,80.73,+0.18,-4.55,+4.91

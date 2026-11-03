@@ -1,0 +1,3 @@
+prompt_contract,plain_percent,repo_percent,delta_pp,n_questions,samples_per_question
+P10 JSON-letter contract,77.45,78.55,+1.09,55,10
+epoch #### contract,55.64,71.09,+15.45,55,10

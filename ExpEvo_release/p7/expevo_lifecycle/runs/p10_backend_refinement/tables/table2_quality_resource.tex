@@ -1,0 +1,19 @@
+\begin{table*}[t]
+    \centering
+    \caption{Downstream inference accuracy and backend resource usage across different
+    refinement settings. Accuracy is macro averaged over four MMLU subjects, while storage
+    and indexed entries are aggregated across their repositories.}
+    \label{tab:quality_resource}
+    \begin{tabular}{lcccccc}
+        \hline
+        Setting & Accuracy (\%) & $\Delta$ (pp) & Storage (MB) & Entries
+        & Storage red. (\%) & Entry red. (\%) \\
+        \hline
+        Full & 75.68 & +0.00 & 4.970 & 24,000 & 0.0 & 0.0 \\
+        BM25 100 & 75.50 & -0.18 & 4.099 & 20,624 & 17.5 & 14.1 \\
+        BM25 80 & 75.14 & -0.55 & 2.937 & 15,406 & 40.9 & 35.8 \\
+        BM25 60 & 74.41 & -1.27 & 1.599 & 8,332 & 67.8 & 65.3 \\
+        BM25 40 & 75.27 & -0.41 & 1.509 & 6,529 & 69.6 & 72.8 \\
+        \hline
+    \end{tabular}
+\end{table*}

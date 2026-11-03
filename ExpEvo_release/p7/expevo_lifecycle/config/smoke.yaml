@@ -1,0 +1,44 @@
+run_id: p7_smoke
+seed: 20261026
+
+data:
+  data_dir: ../data
+  subjects: [international_law, college_medicine, college_biology, high_school_geography]
+  split: test
+  dataset_repo: cais/mmlu
+  dataset_revision: c30699e8356da336a370243923dbaf21066bb9fe
+  n_sampled_per_subject: 4
+  construction_frac: 0.8
+  repeats: 2
+
+api:
+  base_url: ${LLM_BASE_URL}
+  api_key: ${LLM_API_KEY}
+  model: ${LLM_MODEL}
+  timeout: 120
+  max_retries: 5
+  max_api_calls: 200
+  max_estimated_cost_usd: 0.5
+  input_price_usd_per_1m: 0.05
+  output_price_usd_per_1m: 0.08
+
+prompts:
+  inference_temperature: 0.7
+  inference_max_tokens: 320
+  distill_temperature: 0.0
+  distill_max_tokens: 160
+  condense_temperature: 0.0
+  condense_max_tokens: 512
+
+refine:
+  thresholds: [100, 80, 60, 40]
+  exploratory_thresholds: []
+  bm25:
+    k1: 1.5
+    b: 0.75
+  max_group_words: 3500
+
+runtime:
+  max_concurrent: 16
+  runs_dir: runs
+  cache_dir: cache

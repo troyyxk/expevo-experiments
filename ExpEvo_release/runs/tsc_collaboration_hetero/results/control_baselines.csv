@@ -1,0 +1,6 @@
+condition,accuracy_percent,ci_lower,ci_upper,delta_vs_plain_pp,delta_ci_lower,delta_ci_upper,n_questions,note
+plain_no_context,80.55,71.45,88.36,+0.00,+0.00,+0.00,55,"same SYSTEM prompt, retrieved list empty"
+placebo_unrelated_top5,83.64,74.72,91.28,+3.09,-1.09,+7.82,55,Top-5 from International Law repositories
+local_only,81.45,72.36,89.64,+0.91,-3.45,+4.55,55,"own 375 experiences, 15/60 construction coverage"
+shared_matched,80.48,71.64,88.55,-0.06,-4.79,+4.85,55,375 entries covering all 60 questions
+shared_full_hetero,80.73,71.82,88.91,+0.18,-4.36,+4.91,55,"1,500-entry union"

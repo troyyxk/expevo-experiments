@@ -1,0 +1,6 @@
+rate_mbps,calibrated_mbps,deviation_pct,raw_ms_per_item,distilled_ms_per_item,effective_raw_mbps,modeled_at_configured_ms_per_item,measured_saving_pct,modeled_raw_ms_per_item,modeled_distilled_ms_per_item,modeled_saving_pct
+1,0.904,9.6,7.705821,1.742768,0.955,7.3601,77.38,7.3601,1.6568,77.49
+5,4.669,6.62,1.541838,0.348571,4.774,1.472,77.39,1.472,0.3314,77.49
+10,9.533,4.67,0.772032,0.173991,9.533,0.736,77.46,0.736,0.1657,77.49
+20,19.082,4.59,0.386935,0.08682,19.021,0.368,77.56,0.368,0.0828,77.49
+50,47.818,4.36,0.155741,0.034426,47.258,0.1472,77.9,0.1472,0.0331,77.49

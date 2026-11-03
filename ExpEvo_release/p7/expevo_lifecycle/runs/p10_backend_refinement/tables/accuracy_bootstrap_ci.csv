@@ -1,0 +1,6 @@
+setting,accuracy_macro_pct,ci95_low,ci95_high,delta_pp,delta_ci95_low,delta_ci95_high,paired_bootstrap,stratified_by_subject,n_questions,n_bootstrap
+Full,75.68,71.18,80.14,+0.00,+0.00,+0.00,true,true,220,5000
+BM25_100,75.50,71.05,80.09,-0.18,-2.00,+1.68,true,true,220,5000
+BM25_80,75.14,70.50,79.82,-0.55,-2.45,+1.36,true,true,220,5000
+BM25_60,74.41,69.64,79.18,-1.27,-3.36,+0.73,true,true,220,5000
+BM25_40,75.27,70.73,79.86,-0.41,-2.32,+1.50,true,true,220,5000

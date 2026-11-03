@@ -1,0 +1,23 @@
+{
+ "started": "2026-10-27 19:44:00",
+ "rates": [
+  1,
+  5,
+  10,
+  20,
+  50
+ ],
+ "trials": 5,
+ "batch_size": 1000,
+ "smoke": false,
+ "tc": "tbf rate <R>mbit burst max(2KB, R*0.25KB) latency 100ms",
+ "dev": "veth_ex_c",
+ "namespaces": [
+  "expevo_client",
+  "expevo_server"
+ ],
+ "server_ip": "10.226.88.2",
+ "python": "3.12.3",
+ "host": "hydu8x5090gpu",
+ "finished": "2026-10-27 20:11:23"
+}

@@ -1,0 +1,5 @@
+condition,entries,construction_questions,accuracy_percent,ci_lower,ci_upper,delta_vs_plain_pp,delta_ci_lower,delta_ci_upper,top5_own_question_percent
+No experience,0,0,54.67,45.33,64.34,+0.00,+0.00,+0.00,0
+Local-only,375,15,49.33,39.67,59.00,-5.33,-11.67,+1.67,0
+Shared-matched,375,60,77.11,68.61,84.78,+22.44,+13.33,+31.83,95
+Shared-full,1500,60,79.83,71.00,87.50,+25.17,+16.17,+34.33,99

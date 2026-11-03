@@ -1,0 +1,5 @@
+subject,n_questions,n_raw,n_distilled,raw_total_bytes,distilled_total_bytes,full_count,full_bytes,upload_reduction_pct,refined_count_bm100,refined_bytes_bm100,storage_reduction_pct_bm100,item_count_reduction_pct_bm100,normalized_entry_ratio_bm100
+international_law,60,6000,6000,6239524,1400006,6000,1400006,77.56,4989,1125422,19.61,16.85,0.8315
+college_medicine,60,6000,6000,6149843,1172049,6000,1172049,80.94,5033,937118,20.04,16.12,0.8388
+college_biology,60,6000,6000,5443753,1225487,6000,1225487,77.49,4874,941205,23.2,18.77,0.8123
+high_school_geography,60,6000,6000,4247040,1172946,6000,1172946,72.38,5728,1095558,6.6,4.53,0.9547

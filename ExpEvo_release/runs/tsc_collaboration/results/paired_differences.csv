@@ -1,0 +1,10 @@
+comparison,delta_pp,ci_lower_pp,ci_upper_pp,n_questions,bootstrap_seed,bootstrap_reps,pool_aggregation
+Matched − Local,-0.121,-3.030,+2.727,55,20261107,5000,three fixed pools averaged within question
+Full − Matched,-2.061,-6.182,+2.000,55,20261107,5000,three fixed pools averaged within question
+Full − Local,-2.182,-6.545,+2.182,55,20261107,5000,three fixed pools averaged within question
+Matched[20261103] − Local,-1.091,-5.091,+2.545,55,20261107,5000,single pool
+Full − Matched[20261103],-1.091,-5.818,+3.636,55,20261107,5000,single pool
+Matched[20261104] − Local,+1.636,-1.459,+5.273,55,20261107,5000,single pool
+Full − Matched[20261104],-3.818,-7.818,+0.000,55,20261107,5000,single pool
+Matched[20261105] − Local,-0.909,-4.000,+1.818,55,20261107,5000,single pool
+Full − Matched[20261105],-1.273,-6.182,+3.455,55,20261107,5000,single pool

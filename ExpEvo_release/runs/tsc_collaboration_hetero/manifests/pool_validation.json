@@ -1,0 +1,38 @@
+{
+ "subject": "high_school_geography",
+ "partition_seed": 20261108,
+ "matched_seeds": [
+  20261109,
+  20261110,
+  20261111
+ ],
+ "counts": {
+  "local": 375,
+  "matched": 375,
+  "full": 1500
+ },
+ "coverage": {
+  "local": 15,
+  "matched": 60,
+  "full": 60
+ },
+ "hashes": {
+  "full": "5677e15753a9b48803634eb71193ab93f5ae871e05b320678fc61b9e1cd94cce",
+  "local_0": "5ee10db2ad5629d3486951946eccf5aec1915ae116f381bc413d11dea39f7312",
+  "local_1": "f9b36933888d370a394332c09e458b26db7dcbff2407229858f27482029f8dec",
+  "local_2": "7c0131f07b3a2e42b9cbc1a8274fe2bbad9214ab97f9f2166c734585fb9e8352",
+  "local_3": "59add34055e9178ff05015c30a088ff4905c96330bd8b38f04138533962531b6",
+  "matched_20261109": "d0c0224e137415f6b1063c52a4513176138ca23e3ed522be87602cb71538039d",
+  "matched_20261110": "1f5705b4f264a31e23f36350d4cdc59154292b01e35cc172336d50c4d5a1834f",
+  "matched_20261111": "3d92f231f31881f6b60af6390eb1e95e5d8c2a09e834b1aac9e371daf9f0537c"
+ },
+ "bytes": {
+  "local": {
+   "0": 51235,
+   "1": 56474,
+   "2": 55168,
+   "3": 62229
+  },
+  "full": 225106
+ }
+}

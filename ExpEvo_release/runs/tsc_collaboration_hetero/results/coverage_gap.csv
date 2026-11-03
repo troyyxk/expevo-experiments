@@ -1,0 +1,5 @@
+group,n,top1_mean,top5_mean,own_experience_rate
+construction,60,58.30,53.20,100
+held_out,55,26.26,22.95,0
+
+# threshold tau=32.19 (5th percentile of construction top-1); share flagged 'no relevant experience': construction 5%, held-out 73%

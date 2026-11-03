@@ -1,0 +1,6 @@
+dataset,raw_bytes,distilled_bytes,refined_bytes,storage_reduction_pct
+International Law,6239524,1400006,426224,69.56
+College Medicine,6149843,1172049,432431,63.1
+College Biology,5443753,1225487,307979,74.87
+High School Geography,4247040,1172946,432349,63.14
+Total,22080160,4970488,1598983,67.83

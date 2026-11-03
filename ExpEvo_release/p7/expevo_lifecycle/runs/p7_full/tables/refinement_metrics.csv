@@ -1,0 +1,17 @@
+subject,threshold,full_count,full_bytes,refined_count,refined_bytes,storage_reduction_pct,item_count_reduction_pct,normalized_entry_ratio,overflow_items
+international_law,100,600,138914,592,136305,1.88,1.33,0.9867,0
+international_law,80,600,138914,526,120120,13.53,12.33,0.8767,0
+international_law,60,600,138914,327,75276,45.81,45.5,0.545,0
+international_law,40,600,138914,143,41433,70.17,76.17,0.2383,0
+college_medicine,100,600,113562,583,109677,3.42,2.83,0.9717,0
+college_medicine,80,600,113562,532,97903,13.79,11.33,0.8867,0
+college_medicine,60,600,113562,398,73026,35.7,33.67,0.6633,0
+college_medicine,40,600,113562,301,60427,46.79,49.83,0.5017,156
+college_biology,100,600,120184,587,116572,3.01,2.17,0.9783,0
+college_biology,80,600,120184,530,102710,14.54,11.67,0.8833,0
+college_biology,60,600,120184,383,73122,39.16,36.17,0.6383,0
+college_biology,40,600,120184,203,41963,65.08,66.17,0.3383,0
+high_school_geography,100,600,111627,598,111053,0.51,0.33,0.9967,0
+high_school_geography,80,600,111627,574,104585,6.31,4.33,0.9567,0
+high_school_geography,60,600,111627,468,82584,26.02,22.0,0.78,0
+high_school_geography,40,600,111627,235,44742,59.92,60.83,0.3917,0

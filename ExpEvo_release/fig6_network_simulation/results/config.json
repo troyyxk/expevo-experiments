@@ -1,0 +1,21 @@
+{
+ "events_per_run": 24000,
+ "seeds": 30,
+ "experiments": [
+  "E1",
+  "E2",
+  "E3"
+ ],
+ "lambda_client_default": 1.0,
+ "rate_mbps_default": 1.0,
+ "overhead_default_bytes": 0.0,
+ "warmup_frac": 0.0,
+ "service_model": "S = 8*(D+H)/R",
+ "queue": "single FIFO, constant rate",
+ "arrivals": "Poisson per scenario at aggregate rate lam_total",
+ "raw_service_capacity_eps": 135.86858066245898,
+ "python": "3.12.3",
+ "numpy": "2.3.3",
+ "pandas": "2.3.2",
+ "payload_csv_sha256": "9fd2986a61f61332ccae1435d8d6b36c17375753d70c00fb992ac4af7f7a96be"
+}
