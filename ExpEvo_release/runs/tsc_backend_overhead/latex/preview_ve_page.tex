@@ -1,0 +1,44 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[T1]{fontenc}\usepackage{mathptmx}\usepackage{graphicx}
+\usepackage{float}
+\usepackage[paperwidth=560pt,paperheight=742pt,left=23pt,right=23pt,top=24pt,bottom=22pt,columnsep=14pt]{geometry}
+\pagestyle{empty}
+\setlength{\parindent}{1em}
+\newcommand{\ph}{\textit{[placeholder]}}
+\begin{document}
+\noindent\textbf{\large V.E\quad Backend Repository Management and Service-Level Trade-offs}\par\smallskip
+
+\noindent\ph{} The refined repository holds 942 entries against 6{,}000, and the cost of producing it is
+paid once while the cost of querying it is paid on every request. We keep the two ledgers separate and
+report neither an end-to-end latency nor an amortisation claim. \ph{} \ph{} The protocol indexes each
+repository on its own and times the same 55 questions, so the only quantity that changes between the two
+columns of Table~\ref{tab:backend_overhead} is how many experiences the retriever scans. \ph{}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\columnwidth]{images/fig_local_45_matched.pdf}
+    \caption{V.C figure kept on this page only to check the balance against the table. Accuracy on the
+    60 construction questions when the answering client holds no experience about them.}
+    \label{fig:vc}
+\end{figure}
+
+\noindent\ph{} Producing the repository costs 94\,s of similarity-matrix construction plus 0.38\,s of
+anchor grouping, and the historical log records 275 uncached condensation requests. \ph{} \ph{}
+
+\input{table_H}
+
+\noindent\ph{} Query-side savings are measured, not inferred: the index shrinks from 6{,}000 to 942
+entries, construction drops from 0.035\,s to 0.008\,s, and the median query falls from 22.67\,ms to
+3.60\,ms while the 95th percentile falls from 37.72\,ms to 5.73\,ms. \ph{} \ph{} \ph{}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\columnwidth]{images/query_latency_comparison.pdf}
+    \caption{Optional companion: full vs refined hot-index query latency, P50 and P95 on one axis,
+    median of three measurement sessions.}
+    \label{fig:lat}
+\end{figure}
+
+\noindent\ph{} The optional figure repeats the table at a coarser grain and can be dropped if the page is
+tight. \ph{} \ph{}
+\end{document}

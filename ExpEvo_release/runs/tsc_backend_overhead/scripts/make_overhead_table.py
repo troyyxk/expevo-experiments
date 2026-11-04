@@ -17,12 +17,11 @@ def cell(group, metric, col):
 
 
 lines = [r"\begin{table}[t]", r"    \centering",
-         r"    \caption{Backend management overhead on MMLU High School Geography. The full and refined",
-         r"    repositories hold 6{,}000 and 942 entries ($\tau_{\mathrm{sim}}=40$, 84.3\,\% fewer). Local timings",
-         r"    exclude file I/O and LLM inference and were taken on 152 logical cores of an Intel Xeon Platinum",
-         r"    8368, a shared node; query statistics are 825 measured queries per repository (55 questions,",
-         r"    five repeats, three sessions) reported as the median session.",
-         r"    API statistics summarise the historical uncached condensation requests recorded in the run log.}",
+         r"    \caption{Backend management overhead on MMLU High School Geography: 6{,}000 entries in the",
+         r"    full repository versus 942 after refinement ($\tau_{\mathrm{sim}}=40$, 84.3\,\% fewer). Local",
+         r"    timings exclude file I/O and LLM inference; query statistics are the median of three measurement",
+         r"    sessions (825 timed queries per repository). API rows summarise the historical uncached",
+         r"    condensation requests recorded in the run log.}",
          r"    \label{tab:backend_overhead}", r"    \footnotesize", r"    \setlength{\tabcolsep}{3pt}",
          r"    \renewcommand{\arraystretch}{1.06}", r"    \begin{tabular}{lrr}", r"        \hline",
          r"        Metric & Full & Refined \\", r"        \hline",

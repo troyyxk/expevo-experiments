@@ -1,0 +1,9 @@
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=\columnwidth]{images/query_latency_comparison.pdf}
+    \caption{Hot-index query latency of the full and refined repositories on the same 55 questions.
+    P50 and P95 are drawn on one axis; values are the median of three measurement sessions, each with
+    five repeats per question (825 timed queries per repository). The timer covers query tokenisation,
+    BM25 scoring and top-5 ranking, and excludes file I/O, index construction and model generation.}
+    \label{fig:query_latency}
+\end{figure}

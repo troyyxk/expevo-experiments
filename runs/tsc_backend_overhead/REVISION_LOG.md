@@ -70,6 +70,14 @@ the node is shared and the first round differed from the second by ~16 %, the me
 (two sessions of three matrix builds, three query sessions) and the medians are reported. This is the
 same measurement repeated for stability, not an extension of the experimental scope.
 
+## Optional figure and page preview
+
+The guide marks the latency figure as optional; it is generated from
+`results/retrieval_latency_summary.csv` by `scripts/plot_query_latency.py` at exactly column width
+(251 pt, 10 pt text) and can be dropped without affecting the table. A one-page two-column mock
+(`latex/preview_ve_page.tex`, `deliverables/preview_ve_page.pdf`) was compiled to check that the table,
+the optional figure and the V.C figure balance on a page; its body text is placeholder.
+
 ## Things deliberately not claimed
 
 - No end-to-end service latency: the model generation time is not part of these measurements.
