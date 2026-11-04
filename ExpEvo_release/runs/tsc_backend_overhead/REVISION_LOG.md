@@ -33,8 +33,8 @@ File hashes, query-set hash, hardware and package versions: `manifests/input_man
 
 | Measurement | Value | Runs |
 |---|---|---|
-| BM25 similarity matrix, 6000×6000 float64 | **94.1 s** (median; 92.5–150.3) | 6 |
-| Anchor grouping, tau=40 (662 groups) | **0.38 s** (0.377–0.391) | 6 |
+| BM25 similarity matrix, 6000×6000 float64 | **94.137 s** (median of all 6 raw runs; 92.494–150.343) | 6 |
+| Anchor grouping, tau=40 (662 groups) | **0.380 s** (median of all 6 raw runs; 0.377–0.391) | 6 |
 | Index build, full → refined | **0.0354 s → 0.0079 s** | 9 each |
 | Hot query P50, full → refined | **22.67 ms → 3.60 ms** (−84.1 %) | 3 × 275 each |
 | Hot query P95, full → refined | **37.72 ms → 5.73 ms** (−84.8 %) | 3 × 275 each |
@@ -62,6 +62,17 @@ The two numbers are consistent.
 
 Experience distillation (`distill/high_school_geography`, 4,163 calls, $0.0700) is reported in
 `results/distillation_cost_separate.csv` and is **not** part of the backend table.
+
+## Statistics of the timed runs
+
+`time_median_s` in `results/local_maintenance_summary.csv` is the median over **all six raw runs**
+(94.137 s for the matrix, 0.380 s for grouping). The per-session medians (93.113 / 115.886 s) are kept in
+`time_by_session_s` to show drift between sessions and are **not** the reported value. The summary can be
+recomputed from the existing raw CSV without re-timing:
+
+```bash
+python3 scripts/benchmark_refinement_local.py --aggregate-only
+```
 
 ## Repetition beyond the minimum
 

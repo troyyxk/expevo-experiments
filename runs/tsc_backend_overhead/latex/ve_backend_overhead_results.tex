@@ -18,7 +18,7 @@ Refinement cuts the index from 6{,}000 to 942 entries and lowers index construct
 0.008\,s. Hot-index query latency falls from 22.67\,ms to 3.60\,ms at the median and from 37.72\,ms to
 5.73\,ms at the 95th percentile, i.e.\ 84.1\,\% and 84.8\,\% lower. Scoring dominates both
 measurements (81--85\,\% of the query time), so the gain comes from scanning fewer experiences rather
-than from cheaper ranking. Producing the repository is a one-off local cost of 94\,s for the
-$6{,}000\times6{,}000$ similarity matrix (92--150\,s across runs on a shared node) plus 0.38\,s for
-anchor grouping, and 275 uncached condensation requests in the log (186{,}279 input and 12{,}864 output
+than from cheaper ranking. Producing the repository is a one-off local cost of 94.1\,s for the
+$6{,}000\times6{,}000$ similarity matrix (92.5--150.3\,s across six runs on a shared node) plus
+0.38\,s for anchor grouping, and 275 uncached condensation requests in the log (186{,}279 input and 12{,}864 output
 tokens, per-request median 1.69\,s, 95th percentile 4.05\,s, \$0.0103 by the log's own accounting).
