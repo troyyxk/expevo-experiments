@@ -1,0 +1,31 @@
+\begin{table}[t]
+    \centering
+    \caption{Backend management overhead on MMLU High School Geography. The full and refined
+    repositories hold 6{,}000 and 942 entries ($\tau_{\mathrm{sim}}=40$, 84.3\,\% fewer). Local timings
+    exclude file I/O and LLM inference and were taken on 152 logical cores of an Intel Xeon Platinum
+    8368, a shared node; query statistics are 825 measured queries per repository (55 questions,
+    five repeats, three sessions) reported as the median session.
+    API statistics summarise the historical uncached condensation requests recorded in the run log.}
+    \label{tab:backend_overhead}
+    \footnotesize
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{1.06}
+    \begin{tabular}{lrr}
+        \hline
+        Metric & Full & Refined \\
+        \hline
+        Indexed entries & 6{,}000 & 942 \\
+        Index build (s) & 0.0354 & 0.0079 \\
+        Hot query P50 (ms) & 22.67 & 3.60 \\
+        Hot query P95 (ms) & 37.72 & 5.73 \\
+        \hline
+        BM25 matrix build (s) & -- & 94.1 \\
+        Anchor grouping (s) & -- & 0.38 \\
+        \hline
+        Uncached LLM calls & -- & 275 \\
+        Input / output tokens & -- & 186{,}279 / 12{,}864 \\
+        Request P50 / P95 (s) & -- & 1.691 / 4.052 \\
+        Logged cost (USD) & -- & 0.0103 \\
+        \hline
+    \end{tabular}
+\end{table}

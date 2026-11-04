@@ -1,0 +1,9 @@
+[refine] 6000 entries; matrix 288 MB; MemAvailable 665 GiB
+[refine] run 1: matrix 92.49 s, grouping 0.38 s, 662 groups (max 198, singletons 379), peak RSS 329 MiB
+[refine] run 2: matrix 93.11 s, grouping 0.38 s, 662 groups (max 198, singletons 379), peak RSS 329 MiB
+[refine] run 3: matrix 93.79 s, grouping 0.39 s, 662 groups (max 198, singletons 379), peak RSS 329 MiB
+[refine] run 1: matrix 94.48 s, grouping 0.38 s, 662 groups (max 198, singletons 379), peak RSS 329 MiB
+[refine] run 2: matrix 115.89 s, grouping 0.38 s, 662 groups (max 198, singletons 379), peak RSS 329 MiB
+[refine] run 3: matrix 150.34 s, grouping 0.38 s, 662 groups (max 198, singletons 379), peak RSS 329 MiB
+[refine] bm25_similarity_matrix: median 104.499 s over 2 sessions (93.113;115.886); all runs 92.494-150.343 s
+[refine] anchor_grouping: median 0.38 s over 2 sessions (0.383;0.377); all runs 0.377-0.391 s

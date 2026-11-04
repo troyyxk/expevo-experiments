@@ -1,0 +1,24 @@
+% Two paragraphs for Section V.E of the TSC revision. All numbers come from results/*.csv.
+% Three cost families with different denominators: historical LLM requests, one-off local maintenance,
+% and per-query retrieval. They are never summed and never turned into an end-to-end latency claim.
+
+\paragraph{Measurement protocol}
+We quantify the cost of producing and serving a refined repository on one topic, MMLU High School
+Geography, at $\tau_{\mathrm{sim}}=40$. The full repository holds 6{,}000 distilled experiences and the
+refined one 942 (84.3\,\% fewer entries). Retrieval uses the frozen P10 path (BM25 with $k_1=1.5$,
+$b=0.75$, top-5 with ascending-id tie-break) over the same 55 held-out questions. Each repository is
+indexed separately; after one untimed warm-up pass we time 55 queries in five repeats, three times over,
+and report the median session (825 timed queries per repository). The timer covers tokenisation,
+scoring and ranking, and excludes file I/O, index construction and any model call. Maintenance cost is
+measured by calling the unchanged \texttt{build\_matrix} and \texttt{group\_ids} routines on the full
+library, six times each. Historical condensation requests are re-read from the run log.
+
+\paragraph{Results}
+Refinement cuts the index from 6{,}000 to 942 entries and lowers index construction from 0.035\,s to
+0.008\,s. Hot-index query latency falls from 22.67\,ms to 3.60\,ms at the median and from 37.72\,ms to
+5.73\,ms at the 95th percentile, i.e.\ 84.1\,\% and 84.8\,\% lower. Scoring dominates both
+measurements (81--85\,\% of the query time), so the gain comes from scanning fewer experiences rather
+than from cheaper ranking. Producing the repository is a one-off local cost of 94\,s for the
+$6{,}000\times6{,}000$ similarity matrix (92--150\,s across runs on a shared node) plus 0.38\,s for
+anchor grouping, and 275 uncached condensation requests in the log (186{,}279 input and 12{,}864 output
+tokens, per-request median 1.69\,s, 95th percentile 4.05\,s, \$0.0103 by the log's own accounting).

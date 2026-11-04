@@ -49,6 +49,12 @@ ExpEvo_release/
 | **Fig. 6**, §V-C | what does payload reduction do to upload latency when clients share a link? | the same 24,000 payload pairs, replayed through an FCFS queue simulation | `fig6_network_simulation/src/*` |
 | **Fig. 7 + Table II**, §V-D | does backend refinement cut storage/entries without hurting accuracy? | 16 refined repositories, 11,000 held-out answers | `runs/p10_backend_refinement/scripts/*` |
 
+A sixth experiment (`runs/tsc_backend_overhead/`) measures the backend management overhead of
+refinement on High School Geography: the one-off local cost of building the similarity matrix and the
+anchor groups, the historical LLM condensation requests, and the per-query BM25 latency of the full
+6,000-entry versus the refined 942-entry repository. It makes no LLM calls and is reproduced by
+`runs/tsc_backend_overhead/scripts/run_all.sh`.
+
 A fourth and fifth experiment study cross-client sharing on High School Geography:
 `runs/tsc_collaboration/` compares Local-only vs entry-count-matched vs full shared repositories when
 every client has seen the same construction questions, and `runs/tsc_collaboration_hetero/` repeats the

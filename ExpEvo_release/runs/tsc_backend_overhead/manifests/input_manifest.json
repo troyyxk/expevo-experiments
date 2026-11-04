@@ -1,0 +1,48 @@
+{
+ "subject": "high_school_geography",
+ "threshold": 40,
+ "full_repository": {
+  "path": "p7/expevo_lifecycle/runs/p7_full100/full_repositories/high_school_geography.jsonl",
+  "entries": 6000,
+  "bytes": 2138777,
+  "sha256_file": "4b0bcc869b7285e73e912041bcdc57fa495e08e9001f1e8ba4ad4c2944334485",
+  "sha256_ids": "ceb04055038a1cb81e13c8309c720327311caa73f2556d9bae3d18bbfe8e68c2"
+ },
+ "refined_repository": {
+  "path": "p7/expevo_lifecycle/runs/p7_full100/refined/high_school_geography/bm25_40.jsonl",
+  "entries": 942,
+  "bytes": 706123,
+  "sha256_file": "668376b8e8a85619e71e05c73cc86051a2429218c0c83e6da62efbff61dca89e",
+  "sha256_ids": "eee0d8c4f370d36e6fdf86133ea0656dd5c13d846888be8d87cfb444973672df",
+  "source_experiences_covered": 6000
+ },
+ "entry_reduction_percent": 84.3,
+ "queries": {
+  "count": 55,
+  "original": 15,
+  "extended": 40,
+  "sha256_keys": "e8844f62cf1e26e418648716175e495134005c49c674b6c4acbf46572e3075db",
+  "source_files": [
+   "p7/expevo_lifecycle/runs/p7_full100/heldout/high_school_geography.jsonl",
+   "p7/expevo_lifecycle/runs/p10_backend_refinement/eval/heldout_extended.jsonl"
+  ]
+ },
+ "hardware": {
+  "platform": "Linux-6.14.0-32-generic-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.3",
+  "logical_cpus": 152,
+  "cpu_model": "Intel(R) Xeon(R) Platinum 8368 CPU @ 2.40GHz",
+  "ram_gib": 1007.5
+ },
+ "packages": {
+  "numpy": "2.3.3",
+  "rank_bm25": "N/A",
+  "pandas": "2.3.2"
+ },
+ "commit": "5cd4ffe0824afe672135c4cbecfeacab2da5504c",
+ "api_log": {
+  "path": "p7/expevo_lifecycle/runs/p7_full100/tables/api_usage.csv",
+  "sha256_file": "0f9f66039f2ce9399f274da837208e5df033bfed98720efb4a9884f1bad9d077"
+ }
+}

@@ -1,0 +1,13 @@
+session,run_id,operation,subject,n_full_entries,threshold,elapsed_s,input_hash,algorithm_version,hardware_id,status,peak_rss_mib,matrix_mb,notes
+1,1,bm25_similarity_matrix,high_school_geography,6000,40,92.494,b6ab46eac3fcf85c,"src/refine.py build_matrix (k1=1.5,b=0.75)",xeon8368-152t,ok,329.2,288.0,"session 1, repeat 1; float64 directed matrix"
+1,1,anchor_grouping,high_school_geography,6000,40,0.383,b6ab46eac3fcf85c,src/refine.py group_ids,xeon8368-152t,ok,329.2,288.0,"session 1, repeat 1; tau_sim=40; 662 groups, max size 198, 379 singletons"
+1,2,bm25_similarity_matrix,high_school_geography,6000,40,93.113,b6ab46eac3fcf85c,"src/refine.py build_matrix (k1=1.5,b=0.75)",xeon8368-152t,ok,329.2,288.0,"session 1, repeat 2; float64 directed matrix"
+1,2,anchor_grouping,high_school_geography,6000,40,0.378,b6ab46eac3fcf85c,src/refine.py group_ids,xeon8368-152t,ok,329.2,288.0,"session 1, repeat 2; tau_sim=40; 662 groups, max size 198, 379 singletons"
+1,3,bm25_similarity_matrix,high_school_geography,6000,40,93.793,b6ab46eac3fcf85c,"src/refine.py build_matrix (k1=1.5,b=0.75)",xeon8368-152t,ok,329.2,288.0,"session 1, repeat 3; float64 directed matrix"
+1,3,anchor_grouping,high_school_geography,6000,40,0.391,b6ab46eac3fcf85c,src/refine.py group_ids,xeon8368-152t,ok,329.2,288.0,"session 1, repeat 3; tau_sim=40; 662 groups, max size 198, 379 singletons"
+2,1,bm25_similarity_matrix,high_school_geography,6000,40,94.48,b6ab46eac3fcf85c,"src/refine.py build_matrix (k1=1.5,b=0.75)",xeon8368-152t,ok,329.2,288.0,"session 2, repeat 1; float64 directed matrix"
+2,1,anchor_grouping,high_school_geography,6000,40,0.377,b6ab46eac3fcf85c,src/refine.py group_ids,xeon8368-152t,ok,329.2,288.0,"session 2, repeat 1; tau_sim=40; 662 groups, max size 198, 379 singletons"
+2,2,bm25_similarity_matrix,high_school_geography,6000,40,115.886,b6ab46eac3fcf85c,"src/refine.py build_matrix (k1=1.5,b=0.75)",xeon8368-152t,ok,329.2,288.0,"session 2, repeat 2; float64 directed matrix"
+2,2,anchor_grouping,high_school_geography,6000,40,0.382,b6ab46eac3fcf85c,src/refine.py group_ids,xeon8368-152t,ok,329.2,288.0,"session 2, repeat 2; tau_sim=40; 662 groups, max size 198, 379 singletons"
+2,3,bm25_similarity_matrix,high_school_geography,6000,40,150.343,b6ab46eac3fcf85c,"src/refine.py build_matrix (k1=1.5,b=0.75)",xeon8368-152t,ok,329.5,288.0,"session 2, repeat 3; float64 directed matrix"
+2,3,anchor_grouping,high_school_geography,6000,40,0.377,b6ab46eac3fcf85c,src/refine.py group_ids,xeon8368-152t,ok,329.5,288.0,"session 2, repeat 3; tau_sim=40; 662 groups, max size 198, 379 singletons"

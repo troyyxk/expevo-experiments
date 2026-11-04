@@ -1,0 +1,15 @@
+{
+  "subject": "high_school_geography",
+  "threshold": 40,
+  "setting_name": "BM25_40",
+  "expected_full_entries": 6000,
+  "expected_refined_entries": 942,
+  "queries": {"original": 15, "extended": 40, "total": 55},
+  "retrieval": {"tokenizer": "[a-z0-9]+ on lowercased text", "k1": 1.5, "b": 0.75, "top_k": 5,
+                "tie_break": "descending score, then ascending item id"},
+  "query_repeats": 5,
+  "warmup": "one full pass of the 55 queries per repository, untimed",
+  "matrix_repeats": 3,
+  "llm_calls": 0,
+  "notes": "All timings from time.perf_counter(); no file I/O or LLM inference inside any timed region."
+}

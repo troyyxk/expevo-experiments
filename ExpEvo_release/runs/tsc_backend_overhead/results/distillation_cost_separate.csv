@@ -1,0 +1,2 @@
+subject,api_tag,successful_uncached_calls,cache_hits,input_tokens,output_tokens,latency_p50_s,latency_p95_s,estimated_cost,notes
+high_school_geography,distill/high_school_geography,4163,1837,1205778,121205,1.052,2.14,0.069985,"experience distillation, NOT backend condensation; reported separately"

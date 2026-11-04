@@ -1,0 +1,25 @@
+[session 1/3]
+[index] full run 1: build 0.0433 s, tokenize 0.0349 s
+[index] refined run 1: build 0.0113 s, tokenize 0.0075 s
+[index] full run 2: build 0.0421 s, tokenize 0.0341 s
+[index] refined run 2: build 0.0107 s, tokenize 0.0071 s
+[index] full run 3: build 0.0418 s, tokenize 0.0330 s
+[index] refined run 3: build 0.0082 s, tokenize 0.0066 s
+[session 2/3]
+[index] full run 1: build 0.0381 s, tokenize 0.0236 s
+[index] refined run 1: build 0.0078 s, tokenize 0.0052 s
+[index] full run 2: build 0.0293 s, tokenize 0.0237 s
+[index] refined run 2: build 0.0074 s, tokenize 0.0049 s
+[index] full run 3: build 0.0299 s, tokenize 0.0227 s
+[index] refined run 3: build 0.0058 s, tokenize 0.0050 s
+[session 3/3]
+[index] full run 1: build 0.0354 s, tokenize 0.0254 s
+[index] refined run 1: build 0.0079 s, tokenize 0.0052 s
+[index] full run 2: build 0.0306 s, tokenize 0.0239 s
+[index] refined run 2: build 0.0079 s, tokenize 0.0053 s
+[index] full run 3: build 0.0295 s, tokenize 0.0250 s
+[index] refined run 3: build 0.0059 s, tokenize 0.0055 s
+[query] correctness: all 55 x 2 repositories reproduce the reference Top-5
+[query] full:    build 0.0354 s, P50 22.67 ms (sessions 22.40-22.88), P95 37.72 ms (sessions 36.62-37.97)
+[query] refined: build 0.0079 s, P50 3.60 ms (sessions 3.42-3.63), P95 5.73 ms (sessions 5.65-5.75)
+[query] P50 reduction 84.1%, P95 reduction 84.8%

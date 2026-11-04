@@ -1,0 +1,3 @@
+repository,entries,n_unique_queries,n_repeats,n_sessions,n_measured_queries,index_build_s,index_build_min_s,index_build_max_s,query_p50_ms,query_p95_ms,query_p50_min_ms,query_p50_max_ms,query_p95_min_ms,query_p95_max_ms,query_p50_combined_ms,query_p95_combined_ms,query_mean_ms,query_p50_by_repeat,query_p50_by_session,query_p95_by_session,repo_hash
+full,6000,55,5,3,825,0.0354,0.0293,0.0433,22.6749,37.7177,22.3983,22.8835,36.6171,37.9688,22.6621,37.7758,23.879,22.8021;22.4086;22.3908;22.6935;22.6306,22.6749;22.8835;22.3983,36.6171;37.9688;37.7177,ceb04055038a1cb8
+refined,942,55,5,3,825,0.0079,0.0058,0.0113,3.5986,5.7332,3.4175,3.6259,5.6496,5.7506,3.5497,5.7413,3.7067,3.5947;3.5475;3.5596;3.5017;3.5908,3.6259;3.5986;3.4175,5.7506;5.7332;5.6496,eee0d8c4f370d36e

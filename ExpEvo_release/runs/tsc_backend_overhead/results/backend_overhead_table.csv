@@ -1,0 +1,12 @@
+group,metric,full,refined,notes
+Repository,Indexed entries,"6,000",942,entry reduction 84.3%
+Retrieval,Index build (s),0.0354,0.0079,"median of 3 builds, BM25Okapi construction only"
+Retrieval,Hot query P50 (ms),22.67,3.60,"55 queries x 5 repeats, P10 code path"
+Retrieval,Hot query P95 (ms),37.72,5.73,"55 queries x 5 repeats, P10 code path"
+Retrieval,Query time P50 reduction,--,84.1%,1 - refined/full; not an end-to-end latency claim
+Local refinement,BM25 matrix build (s),--,94.1,"6000x6000 float64, median of 6 runs (92.494-150.343 s)"
+Local refinement,Anchor grouping (s),--,0.38,"tau_sim=40, median of 6 runs, 662 groups"
+LLM condensation,Successful uncached calls,--,275,historical log; 6 cache hits excluded
+LLM condensation,Input / output tokens,--,"186,279 / 12,864",successful uncached requests only
+LLM condensation,API request P50 / P95 (s),--,1.691 / 4.052,"per-request latency, not wall-clock"
+LLM condensation,Logged estimated cost (USD),--,0.0103,as recorded by the historical log; not an audited bill
