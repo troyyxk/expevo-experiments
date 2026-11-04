@@ -11,7 +11,7 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 P7 = os.path.join(ROOT, "p7", "expevo_lifecycle", "runs", "p7_full100")
 sys.path.insert(0, os.path.join(ROOT, "p7", "expevo_lifecycle"))
-from src.refine import build_matrix, group_ids, tokenize  # noqa: E402  (frozen implementation)
+from src.refine import build_matrix, group_ids  # noqa: E402  (frozen implementation; nothing else is run)
 
 SUBJECT = "high_school_geography"
 THRESHOLD = 40

@@ -1,8 +1,18 @@
 # Revision log — backend management overhead (TSC §5.2)
 
+## Guidance availability
+
+`guidance/README.md`, `guidance/AGENTS.md` and `guidance/ExpEvo_TMC_Revision_Guide.md` are **not present**
+in this workspace (checked before starting). This experiment therefore follows the execution guide
+(`20261104-ExpEvo-TSC-Backend-Management-Overhead-Agent执行指南.md`) directly; nothing in it conflicted
+with the frozen data or with earlier project decisions.
+
 ## Scope
 
-One subject (`high_school_geography`), one threshold (`tau_sim = 40`), **zero new LLM calls**. The three
+One subject (`high_school_geography`), one threshold (`tau_sim = 40`), **zero new LLM calls** — the API
+log was last written on 2026-10-27, before this experiment started. Only `build_matrix()` and
+`group_ids()` are imported from the frozen `src/refine.py`; `condense()` and the `refine.py` main
+pipeline are never invoked. The three
 cost families are reported side by side and never summed: historical API requests, one-off local
 maintenance, and per-query retrieval.
 
@@ -52,6 +62,13 @@ The two numbers are consistent.
 
 Experience distillation (`distill/high_school_geography`, 4,163 calls, $0.0700) is reported in
 `results/distillation_cost_separate.csv` and is **not** part of the backend table.
+
+## Repetition beyond the minimum
+
+The supplementary instruction allows a single matrix timing and one pass of 55 x 5 x 2 queries. Because
+the node is shared and the first round differed from the second by ~16 %, the measurements were repeated
+(two sessions of three matrix builds, three query sessions) and the medians are reported. This is the
+same measurement repeated for stability, not an extension of the experimental scope.
 
 ## Things deliberately not claimed
 
