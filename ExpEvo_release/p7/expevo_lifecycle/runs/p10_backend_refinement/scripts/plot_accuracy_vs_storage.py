@@ -73,6 +73,22 @@ def panel_accuracy_vs_storage(ax, table, ci):
     ax.set_axisbelow(True)
 
 
+def panel_accuracy_by_subject(ax, acc_rows):
+    """Accuracy vs storage, one line per subject, drawn exactly like panel (a)."""
+    for s in SUBJECTS:
+        pts = [acc_rows[(s, c)] for c in SETTINGS]
+        x = [float(r["storage_mb"]) for r in pts]
+        y = [100 * float(r["subject_accuracy"]) for r in pts]
+        ax.plot(x, y, "-", marker=MARKERS[s], ms=4.6, lw=1.3, color=COLORS[s],
+                mfc=COLORS[s], mec="white", mew=0.5, label=NICE[s])
+    ax.set_xlabel("Repository storage (MB)")
+    ax.set_ylabel("Inference accuracy (%)")
+    ax.set_xlim(0.05, 1.50)
+    ax.set_ylim(66.5, 83.0)
+    ax.grid(True, axis="y", ls=":", lw=0.4, alpha=0.55)
+    ax.set_axisbelow(True)
+
+
 def panel_storage(ax, per_subject):
     x = list(range(len(SETTINGS)))
     for s in SUBJECTS:
@@ -90,8 +106,13 @@ def panel_storage(ax, per_subject):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--outdir", default=os.path.join(OUT, "figures"))
+    ap.add_argument("--panel-b", choices=["subject", "macro"], default="subject",
+                    help="subject: one line per subject (same style as panel a); "
+                         "macro: four-subject macro accuracy with 95%% CI")
     a = ap.parse_args()
     per_subject, table, ci = load()
+    acc_rows = {(r["subject"], r["setting"]): r for r in
+                csv.DictReader(open(os.path.join(OUT, "tables", "accuracy_by_subject.csv")))}
 
     # standalone (b)
     fig, ax = plt.subplots(figsize=(3.45, 2.42))
@@ -107,18 +128,22 @@ def main():
     fig, axes = plt.subplots(1, 2, figsize=(7.16, 2.42))
     fig.subplots_adjust(left=0.095, right=0.985, top=0.845, bottom=0.175, wspace=0.26)
     panel_storage(axes[0], per_subject)
-    panel_accuracy_vs_storage(axes[1], table, ci)
+    if a.panel_b == "subject":
+        panel_accuracy_by_subject(axes[1], acc_rows)
+    else:
+        panel_accuracy_vs_storage(axes[1], table, ci)
     handles, labels = axes[0].get_legend_handles_labels()
     fig.legend(handles, labels, loc="upper center", ncol=4, frameon=False,
                bbox_to_anchor=(0.5, 0.995), handlelength=1.4, columnspacing=1.3,
                handletextpad=0.45, borderaxespad=0.1, borderpad=0.0)
     for ax, lab in zip(axes, ("(a)", "(b)")):
         ax.text(0.02, 1.03, lab, transform=ax.transAxes, fontsize=10, va="bottom", ha="left")
+    suffix = "" if a.panel_b == "subject" else "_macro"
     for ext in ("pdf", "png"):
-        fig.savefig(os.path.join(a.outdir, f"fig_backend_refinement_quality_resource_v2.{ext}"),
+        fig.savefig(os.path.join(a.outdir, f"fig_backend_refinement_quality_resource_v2{suffix}.{ext}"),
                     dpi=300, bbox_inches="tight", pad_inches=0.02)
     plt.close(fig)
-    print("figure ->", os.path.join(a.outdir, "fig_backend_refinement_quality_resource_v2.pdf/.png"))
+    print("figure ->", os.path.join(a.outdir, f"fig_backend_refinement_quality_resource_v2{suffix}.pdf/.png"))
 
     print("\nsetting  storage_MB  accuracy%  95% CI")
     for s in SETTINGS:

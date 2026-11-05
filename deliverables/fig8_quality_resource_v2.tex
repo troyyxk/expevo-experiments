@@ -1,15 +1,17 @@
-% Replacement for the current Fig. 8: panel (b) becomes accuracy vs. storage.
+% Replacement for the current Fig. 8: panel (b) becomes accuracy versus storage.
 % Panel (a) is unchanged; the former "normalized indexed entries" panel is dropped
 % (the entry counts are already reported in the table).
+% If a single macro-average series with 95% CI is preferred, use
+% figures/fig_backend_refinement_quality_resource_v2_macro.pdf instead of the file below.
 \begin{figure*}[t]
     \centering
     \includegraphics[width=\textwidth]{images/fig_backend_refinement_quality_resource_v2.pdf}
     \caption{Backend repository storage and inference accuracy across refinement settings on four MMLU
-    subjects. (a) Repository storage size per subject. (b) Four-subject macro accuracy against the total
-    repository storage; error bars are 95\,\% confidence intervals of the accuracy itself, obtained by a
-    paired question-level bootstrap over 220 questions with ten responses each. Refinement reduces the
-    stored repository substantially, while the observed accuracy differences between settings remain
-    small relative to these intervals. The panel visualizes the quality--resource trade-off; it does not
-    establish that refinement is lossless.}
+    subjects. (a) Repository storage size per subject. (b) Inference accuracy against the storage of the
+    same repository; each trajectory runs from the full repository (rightmost point) to the most
+    aggressive setting (leftmost). Refinement reduces storage by 63--86\,\% per subject, while the
+    observed accuracy stays within a narrow band. The 95\,\% confidence interval of the four-subject
+    macro accuracy is about $\pm4.5$ points, wider than any between-setting difference, so the panel
+    visualises the quality--resource trade-off rather than establishing that refinement is lossless.}
     \label{fig:quality_resource}
 \end{figure*}
