@@ -35,8 +35,8 @@ plt.rcParams.update({
 })
 
 # label placement for panel (b): (dx, dy, ha)
-# label placement for panel (b): (dx pt, dy pt), with a thin leader line so clusters stay readable
-ANNOT = {"Full": (-12, 13), "100": (13, -12), "80": (-12, 12), "60": (14, -11), "40": (11, 12)}
+# label placement for panel (b), matching panel (a)'s plain typography (no leader lines)
+ANNOT = {"Full": (-7, 7), "100": (-7, 7), "80": (-7, 8), "60": (7, -7), "40": (-7, 7)}
 
 
 def load():
@@ -54,19 +54,20 @@ def panel_accuracy_vs_storage(ax, table, ci):
     hi = [float(ci[s]["ci95_high"]) for s in SETTINGS]
     yerr = [[y[i] - lo[i] for i in range(len(y))], [hi[i] - y[i] for i in range(len(y))]]
 
-    ax.errorbar(x, y, yerr=yerr, fmt="none", ecolor="#404040", elinewidth=0.8,
+    # same visual language as panel (a): solid line, filled marker with a white edge
+    ax.errorbar(x, y, yerr=yerr, fmt="none", ecolor="#6f6f6f", elinewidth=0.8,
                 capsize=2.0, capthick=0.8, zorder=3)
     ax.plot(x, y, "-", color="#404040", lw=1.3, zorder=4)
-    ax.plot(x, y, "o", ms=4.6, mfc="white", mec="#404040", mew=1.0, zorder=5)
+    ax.plot(x, y, "o", ms=4.6, mfc="#404040", mec="white", mew=0.6, zorder=5)
     for s, xi, yi in zip(SETTINGS, x, y):
         lab = LABELS[SETTINGS.index(s)]
         dx, dy = ANNOT[lab]
         ax.annotate(lab, (xi, yi), textcoords="offset points", xytext=(dx, dy),
-                    ha="left" if dx > 0 else "right", va="center", fontsize=8.6, color="#333333",
-                    arrowprops=dict(arrowstyle="-", lw=0.4, color="#999999", shrinkA=0, shrinkB=3))
+                    ha="right" if dx < 0 else "left", va="center", fontsize=9.2, color="#333333",
+                    bbox=dict(boxstyle="square,pad=0.10", fc="white", ec="none"))
     ax.set_xlabel("Repository storage (MB)")
     ax.set_ylabel("Inference accuracy (%)")
-    ax.set_xlim(1.25, 5.45)
+    ax.set_xlim(1.05, 5.55)
     ax.set_ylim(67.5, 81.5)
     ax.grid(True, axis="y", ls=":", lw=0.4, alpha=0.55)
     ax.set_axisbelow(True)
