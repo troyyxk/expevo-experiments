@@ -1,0 +1,17 @@
+% Variant of the Fig. 8 replacement: panel (b) shows the four-subject macro accuracy against the total
+% repository storage, with the absolute-accuracy 95% CI. Points are the discrete refinement settings, so
+% they are not joined by a line. The legend belongs to panel (a) only.
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{images/fig_backend_refinement_quality_resource_v2_macro.pdf}
+    \caption{Backend repository storage and inference accuracy across refinement settings on four MMLU
+    subjects. (a) Repository storage size per subject; the legend applies to this panel only.
+    (b) Four-subject macro accuracy against the total repository storage. The five markers are the
+    discrete settings Full, 100, 80, 60 and 40 (right to left), so they are not connected by a line;
+    error bars are 95\,\% confidence intervals of the accuracy itself, obtained by a paired
+    question-level bootstrap over 220 questions with ten responses each. Refinement removes 69.6\,\% of
+    the stored bytes, while the observed accuracy differences remain small relative to these intervals.
+    The panel visualises the quality--resource trade-off; it does not establish that refinement is
+    lossless.}
+    \label{fig:quality_resource}
+\end{figure*}

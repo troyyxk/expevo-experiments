@@ -36,7 +36,7 @@ plt.rcParams.update({
 
 # label placement for panel (b): (dx, dy, ha)
 # label placement for panel (b), matching panel (a)'s plain typography (no leader lines)
-ANNOT = {"Full": (-7, 7), "100": (-7, 7), "80": (-7, 8), "60": (7, -7), "40": (-7, 7)}
+ANNOT = {"Full": (-7, 7), "100": (-7, 8), "80": (-7, 8), "60": (9, -7), "40": (-9, 8)}
 
 
 def load():
@@ -55,16 +55,15 @@ def panel_accuracy_vs_storage(ax, table, ci):
     yerr = [[y[i] - lo[i] for i in range(len(y))], [hi[i] - y[i] for i in range(len(y))]]
 
     # same visual language as panel (a): solid line, filled marker with a white edge
+    # discrete refinement settings: markers and error bars only, no connecting line
     ax.errorbar(x, y, yerr=yerr, fmt="none", ecolor="#6f6f6f", elinewidth=0.8,
                 capsize=2.0, capthick=0.8, zorder=3)
-    ax.plot(x, y, "-", color="#404040", lw=1.3, zorder=4)
-    ax.plot(x, y, "o", ms=4.6, mfc="#404040", mec="white", mew=0.6, zorder=5)
+    ax.plot(x, y, "o", ms=4.6, mfc="#404040", mec="white", mew=0.6, zorder=5, linestyle="none")
     for s, xi, yi in zip(SETTINGS, x, y):
         lab = LABELS[SETTINGS.index(s)]
         dx, dy = ANNOT[lab]
         ax.annotate(lab, (xi, yi), textcoords="offset points", xytext=(dx, dy),
-                    ha="right" if dx < 0 else "left", va="center", fontsize=9.2, color="#333333",
-                    bbox=dict(boxstyle="square,pad=0.10", fc="white", ec="none"))
+                    ha="right" if dx < 0 else "left", va="center", fontsize=9.2, color="#333333")
     ax.set_xlabel("Repository storage (MB)")
     ax.set_ylabel("Inference accuracy (%)")
     ax.set_xlim(1.05, 5.55)
@@ -126,18 +125,31 @@ def main():
 
     # combined (a)+(b)
     fig, axes = plt.subplots(1, 2, figsize=(7.16, 2.42))
-    fig.subplots_adjust(left=0.095, right=0.985, top=0.845, bottom=0.175, wspace=0.26)
+    top = 0.775 if a.panel_b == "macro" else 0.845
+    fig.subplots_adjust(left=0.095, right=0.985, top=top, bottom=0.175, wspace=0.26)
     panel_storage(axes[0], per_subject)
     if a.panel_b == "subject":
         panel_accuracy_by_subject(axes[1], acc_rows)
     else:
         panel_accuracy_vs_storage(axes[1], table, ci)
     handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper center", ncol=4, frameon=False,
-               bbox_to_anchor=(0.5, 0.995), handlelength=1.4, columnspacing=1.3,
-               handletextpad=0.45, borderaxespad=0.1, borderpad=0.0)
+    if a.panel_b == "macro":
+        # the four colours belong to panel (a) only; panel (b) is the four-subject aggregate
+        # matplotlib fills the legend column-major: reorder so the rows read IL,CM / CB,HSG
+        order = [0, 2, 1, 3]
+        axes[0].legend([handles[i] for i in order], [labels[i] for i in order],
+                       loc="lower center", bbox_to_anchor=(0.5, 1.04), ncol=2,
+                       frameon=False, handlelength=1.4, columnspacing=1.1, handletextpad=0.45,
+                       borderaxespad=0.0, fontsize=9.2)
+    else:
+        fig.legend(handles, labels, loc="upper center", ncol=4, frameon=False,
+                   bbox_to_anchor=(0.5, 0.995), handlelength=1.4, columnspacing=1.3,
+                   handletextpad=0.45, borderaxespad=0.1, borderpad=0.0)
     for ax, lab in zip(axes, ("(a)", "(b)")):
-        ax.text(0.02, 1.03, lab, transform=ax.transAxes, fontsize=10, va="bottom", ha="left")
+        if a.panel_b == "macro":
+            ax.text(0.03, 0.965, lab, transform=ax.transAxes, fontsize=10, va="top", ha="left")
+        else:
+            ax.text(0.02, 1.03, lab, transform=ax.transAxes, fontsize=10, va="bottom", ha="left")
     suffix = "" if a.panel_b == "subject" else "_macro"
     for ext in ("pdf", "png"):
         fig.savefig(os.path.join(a.outdir, f"fig_backend_refinement_quality_resource_v2{suffix}.{ext}"),
