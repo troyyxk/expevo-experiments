@@ -1,0 +1,15 @@
+% Replacement for the current Fig. 8: panel (b) becomes accuracy vs. storage.
+% Panel (a) is unchanged; the former "normalized indexed entries" panel is dropped
+% (the entry counts are already reported in the table).
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{images/fig_backend_refinement_quality_resource_v2.pdf}
+    \caption{Backend repository storage and inference accuracy across refinement settings on four MMLU
+    subjects. (a) Repository storage size per subject. (b) Four-subject macro accuracy against the total
+    repository storage; error bars are 95\,\% confidence intervals of the accuracy itself, obtained by a
+    paired question-level bootstrap over 220 questions with ten responses each. Refinement reduces the
+    stored repository substantially, while the observed accuracy differences between settings remain
+    small relative to these intervals. The panel visualizes the quality--resource trade-off; it does not
+    establish that refinement is lossless.}
+    \label{fig:quality_resource}
+\end{figure*}
